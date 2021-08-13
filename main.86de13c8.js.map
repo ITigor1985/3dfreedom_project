@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/main.js"],"names":["$","document","ready","slick"],"mappings":";AAAAA,EAAEC,UAAUC,MAAM,WACdF,EAAE,OAAOG","file":"main.86de13c8.js","sourceRoot":"../src","sourcesContent":["$(document).ready(function(){\n    $('.g1').slick();\n  });"]}
