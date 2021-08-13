@@ -1,3 +1,5 @@
-$(document).ready(function(){
+
+
+  (function($) {
     $('.g1').slick();
-  });
+     });
