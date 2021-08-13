@@ -33,17 +33,30 @@
         </ul>
     </div>
     <div class="backdrop is-hidden" data-modal>
-        <div class='g1'>
-            <div>
-                <img src="./images/main-page-more-photo/mobile/1.jpg" alt="img">
-            </div>
-            <div>
-                <img src="./images/main-page-more-photo/mobile/2.jpg" alt="img">
-            </div> 
-            <div>
-                <img src="./images/main-page-more-photo/mobile/3.jpg" alt="img">
-            </div>
-        </div>
+        
+        <div class="wrapper">
+			<!-- Контент -->
+
+			<div class="slider">
+				<div class="slider__item filter">
+					<img src="./images/main-page-more-photo/mobile/1.jpg" alt="img">
+				</div>
+				<div class="slider__item">
+					<img src="./images/main-page-more-photo/mobile/2.jpg" alt="img">
+				</div>
+				<div class="slider__item filter">
+					<img src="./images/main-page-more-photo/mobile/3.jpg" alt="img">
+				</div>
+				
+			</div>
+			
+			<!-- Подключаем jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			<script src="../js/slick/slick.min.js"></script>
+			<!-- Подключаем файл скриптов -->
+			<script src="js/main.js"></script>
+		</div>
     </div>
     
 </section>
