@@ -47,6 +47,8 @@
     margin-top: calc(-1 * 56px);
   }
   .gallery__list-card {
-    @include column-alignment(2, 32px, 56px);
+    flex-basis: calc((100% - 2 * 32px) / 2);
+    margin-left: 32px;
+    margin-top: 56px;
   }
 }
