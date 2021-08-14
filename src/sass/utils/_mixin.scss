@@ -1,0 +1,15 @@
+@mixin button-padding($pad-lr) {
+  padding-left: $pad-lr;
+  padding-right: $pad-lr;
+}
+
+@mixin column-alignment($multiplier, $indent-l, $indent-t) {
+  flex-basis: calc((100% - #{$multiplier} * #{$indent-l}) / #{$multiplier});
+  margin-left: $indent-l;
+  margin-top: $indent-t;
+}
+
+@mixin font($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh/$fs;
+}
