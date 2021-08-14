@@ -1,12 +1,13 @@
 .gallery-title {
   font-family: Montserrat;
-
-  font-style: normal;
   font-weight: 700;
   @include font(24px, 30px);
   text-transform: uppercase;
   color: #487996;
   margin-bottom: 16px;
+}
+.about-list-img {
+  display: block;
 }
 
 .gallery__card-title {
@@ -21,7 +22,11 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
+  .gallery-title {
+    margin-bottom: 32px;
+    @include font(36px, 45px);
+  }
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
@@ -30,5 +35,18 @@
   }
   .gallery__list-card {
     @include column-alignment(2, 18px, 32px);
+  }
+  .gallery__card-title {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery__list {
+    margin-left: calc(-1 * 32px);
+    margin-top: calc(-1 * 56px);
+  }
+  .gallery__list-card {
+    @include column-alignment(2, 32px, 56px);
   }
 }
