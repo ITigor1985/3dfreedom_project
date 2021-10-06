@@ -1,0 +1,99 @@
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #383838;
+  height: 86;
+}
+.header-menu {
+  display: none;
+}
+
+.header-middle {
+  padding-top: 435px;
+  background: linear-gradient(to top, white 45%, rgba(253, 253, 253, 0), rgba(253, 253, 253, 0)),
+    no-repeat url('../images/mobile/header/header-bg.jpg');
+  height: 100vh;
+}
+.wrapper {
+  padding-top: 435px;
+}
+
+.header-middle-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #383838;
+}
+
+.header-middle-list {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #383838;
+  margin-bottom: 20px;
+}
+.button {
+  border: none;
+  padding: 10px 25px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #383838;
+  background: radial-gradient(14.38% 469.39% at 50% 50%, #ffe791 0%, #ffaf28 100%);
+  border-radius: 174px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-top {
+    justify-content: space-around;
+  }
+  .header-menu {
+    display: block;
+  }
+  .header-link {
+    margin-right: 60px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #ffffff;
+  }
+  .header-middle {
+    padding-top: 447px;
+    padding-right: 300px;
+    padding-left: 50px;
+    background: linear-gradient(346.61deg, #ffffff 20.11%, #ffffff00 52.13%),
+      linear-gradient(24.02deg, #ffffff 20.86%, #ffffff00 65.47%),
+      no-repeat url('../images/tablet/header/tablet-bg.jpg');
+    height: 100vh;
+  }
+  .header-middle-title {
+    font-size: 36px;
+    line-height: 1.22;
+    margin-bottom: 30px;
+  }
+  .header-middle-list {
+    font-size: 24px;
+    line-height: 1.41;
+    margin-bottom: 30px;
+  }
+  .header-link:last-child {
+    margin-right: 0;
+  }
+  .button {
+    border: none;
+    padding: 12px 74px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.38;
+    color: #383838;
+    background: radial-gradient(14.38% 469.39% at 50% 50%, #ffe791 0%, #ffaf28 100%);
+    border-radius: 174px;
+  }
+}
