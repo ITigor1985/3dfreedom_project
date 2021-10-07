@@ -14,8 +14,10 @@
     width: 769px;
   }
 }
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 1445px;
+    width: 1439px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }

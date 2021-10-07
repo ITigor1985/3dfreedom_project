@@ -1,11 +1,20 @@
 <section class="header">
     <div class="header-top section container">
-        <img src="images/mobile/header/logo.png" class="header-logo" width="110" height="38" alt="logo">
+        <picture>            
+            <source media="(min-width: 1440px)" 
+            srcset="images/desktop/header/logo.png 1x"/>            
+            <source media="(min-width: 768px)"
+             srcset="images/tablet/header/logo.png 1x"/>            
+            <source media="(max-width: 767px)" 
+            srcset="images/mobile/header/logo.png 1x"/> 
+            <img class="header-logo" src="#" alt="Logotip" />
+        </picture>
         <div class="header-menu">
             <a href="#" class="header-link link">Наши работы</a>
             <a href="#" class="header-link link">Прайс</a>
         </div>
         <img src="images/mobile/header/icon_phone.png" class="header-img-phone" width="37" height="37" alt="contacts">
+        
         <div class="header-phone_dropdown visually-hidden">
             <ul class="call-button__list list ">
                 <li class="call-button__item">
