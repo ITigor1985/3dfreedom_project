@@ -8,11 +8,14 @@
 .header-menu {
   display: none;
 }
+.call {
+  background-color: transparent;
+  border: none;
+}
 
 .header-middle {
   padding-top: 435px;
-  background: linear-gradient(to top, white 45%, rgba(253, 253, 253, 0), rgba(253, 253, 253, 0)),
-    no-repeat url('../images/mobile/header/header-bg.jpg');
+  background: no-repeat url('../images/mobile/header/header-bg.jpg');
   height: 100vh;
 }
 .wrapper {
@@ -67,9 +70,7 @@
     padding-top: 447px;
     padding-right: 300px;
     padding-left: 50px;
-    background: linear-gradient(346.61deg, #ffffff 20.11%, #ffffff00 52.13%),
-      linear-gradient(24.02deg, #ffffff 20.86%, #ffffff00 65.47%),
-      no-repeat url('../images/tablet/header/tablet-bg.jpg');
+    background: no-repeat url('../images/tablet/header/tablet-bg.jpg');
     height: 100vh;
   }
   .header-middle-title {
@@ -102,9 +103,7 @@
     padding-right: 600px;
     padding-left: 100px;
 
-    background: linear-gradient(to right, #fffffff8 35.11%, #ffffff78 55.11%),
-      linear-gradient(360.02deg, #fffffff3 5.86%, #ffffff00 30%),
-      no-repeat url('../images/desktop/header/desktop-bg.jpg');
+    background: no-repeat url('../images/desktop/header/desktop-bg.jpg');
   }
   .header-top {
     justify-content: space-between;

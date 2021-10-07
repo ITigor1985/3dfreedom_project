@@ -13,8 +13,18 @@
             <a href="#" class="header-link link">Наши работы</a>
             <a href="#" class="header-link link">Прайс</a>
         </div>
-        <img src="images/mobile/header/icon_phone.png" class="header-img-phone" width="37" height="37" alt="contacts">
-        
+        <button type="button" class="call">
+            <picture>            
+                <source media="(min-width: 1440px)" 
+                srcset="images/desktop/header/icon_phone-desktop.png 1x"/>            
+                <source media="(min-width: 768px)"
+                 srcset="images/tablet/header/icon_phone-tablet.png 1x"/>            
+                <source media="(max-width: 767px)" 
+                srcset="images/mobile/header/icon_phone.png 1x"/> 
+                <img class="phone" src="#" alt="contact phone" />
+            </picture>
+        <!-- <img src="images/mobile/header/icon_phone.png" class="header-img-phone"  alt="contacts"> -->
+        </button>
         <div class="header-phone_dropdown visually-hidden">
             <ul class="call-button__list list ">
                 <li class="call-button__item">
