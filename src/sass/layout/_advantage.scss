@@ -79,6 +79,9 @@ li:nth-child(2n) > .advantage-img-wrapper {
 }
 
 @media screen and (min-width: 1440px) {
+  .advantage {
+    position: relative;
+  }
   .advantage-item:nth-child(n) {
     flex-direction: column;
   }
@@ -109,9 +112,22 @@ li:nth-child(2n) > .advantage-img-wrapper {
     margin: 0 auto;
   }
   .advantage-title {
+    text-align: right;
     font-size: 48px;
     line-height: 1.39;
     margin-bottom: 0px;
+  }
+  .advantage-title::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 50;
+    width: 34%;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
+    transform: translateY(40px);
   }
   .advantage-padding {
     padding: 0px 0px;
