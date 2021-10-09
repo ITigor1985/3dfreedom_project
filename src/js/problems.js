@@ -17,11 +17,11 @@
             }
           },
           {
-            breakpoint: 374,
+            breakpoint: 480,
             settings: {
-              arrows: true,
-              centerMode: true,
-              centerPadding: '20px',
+              arrows: false,
+               centerMode: true,
+               centerPadding: '30px',
               slidesToShow: 1
             }
           }

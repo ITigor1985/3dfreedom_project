@@ -1,3 +1,43 @@
+.problems {
+  font-family: Montserrat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .problems-list {
   display: flex;
+}
+.problems-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #ff7d28;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.problems-item {
+  width: 265px;
+  padding: 38px 28px;
+  background: #383838;
+  box-shadow: 0px 4px 27px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  margin: 0 8.5px;
+  border: 3px solid #ffaf28;
+}
+.problems-descriprtion-title {
+  background: linear-gradient(to right, orange 49%, white 2%, orange 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  margin-bottom: 37px;
+}
+.problems-descriprtion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 161px;
+  border-bottom: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
 }
