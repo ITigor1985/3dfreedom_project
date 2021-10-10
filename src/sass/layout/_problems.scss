@@ -5,6 +5,7 @@
 }
 .problems-list {
   display: flex;
+  position: relative;
 }
 .problems-title {
   font-weight: 700;
@@ -56,8 +57,21 @@
   margin-bottom: 20px;
 }
 .button-slick {
+  position: absolute;
+  bottom: -30px;
   background: #383838;
   border: 3px solid #ffaf28;
+  color: white;
+  align-self: flex-end;
+}
+.button-slick-right {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  background: #383838;
+  border: 3px solid #ffaf28;
+  color: white;
+  align-self: flex-end;
 }
 .problems-list.container {
   padding-left: 0;

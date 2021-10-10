@@ -17,7 +17,7 @@ $(document).ready(function () {
         breakpoint: 768,
         settings: {
           autoplay: true,
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '30px',
           slidesToShow: 1,
@@ -30,5 +30,7 @@ $(document).ready(function () {
   const prev = document.querySelector('.slick-prev');
   prev.textContent = `Prev`;
   prev.classList.add("button-slick");
-  console.log(prev);
+  const next = document.querySelector('.slick-next');
+  next.textContent = `Next`;
+  next.classList.add("button-slick-right");
 });
