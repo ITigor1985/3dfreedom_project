@@ -1,3 +1,4 @@
+import logo from '../images/mobile/problems/arrow_left.png';
 $(document).ready(function () {
   $('.problems-list').slick({
     centerMode: true,
@@ -27,10 +28,10 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
+  // const imageArrow = document.createElement("img");
+  // imageArrow.src = "./images/mobile/problems/arrow_left.png";
+  // console.log(imageArrow);
   const prev = document.querySelector('.slick-prev');
-  prev.textContent = `Prev`;
-  prev.classList.add("button-slick");
-  const next = document.querySelector('.slick-next');
-  next.textContent = `Next`;
-  next.classList.add("button-slick-right");
+  prev.innerHTML='';
+  prev.insertAdjacentHTML("beforeend", `<img src=${logo}>`);
 });
