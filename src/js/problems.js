@@ -29,5 +29,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   const prev = document.querySelector('.slick-prev');
   prev.textContent = `Prev`;
+  prev.classList.add("button-slick");
   console.log(prev);
 });
