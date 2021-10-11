@@ -77,3 +77,19 @@
   padding-left: 0;
   padding-right: 0;
 }
+.slick-prev.slick-arrow {
+  position: absolute;
+  align-self: bottom;
+  left: 5px;
+  bottom: -30px;
+  background: none;
+  border: none;
+}
+.slick-next.slick-arrow {
+  position: absolute;
+  align-self: bottom;
+  right: 5px;
+  bottom: -30px;
+  background: none;
+  border: none;
+}

@@ -1,4 +1,5 @@
-import logo from '../images/mobile/problems/arrow_left.png';
+import arrow_left from '../images/mobile/problems/arrow_left.png';
+import arrow_right from '../images/mobile/problems/arrow_right.png';
 $(document).ready(function () {
   $('.problems-list').slick({
     centerMode: true,
@@ -28,10 +29,18 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-  // const imageArrow = document.createElement("img");
-  // imageArrow.src = "./images/mobile/problems/arrow_left.png";
-  // console.log(imageArrow);
   const prev = document.querySelector('.slick-prev');
-  prev.innerHTML='';
-  prev.insertAdjacentHTML("beforeend", `<img src=${logo}>`);
+  prev.innerHTML = '';
+  prev.insertAdjacentHTML(
+    'beforeend',
+    `<img src=${arrow_left} alt="стрелка в лево" class="problems-arrow-left"> `,
+  );
+});
+$(document).ready(function () {
+  const next = document.querySelector('.slick-next');
+  next.innerHTML = '';
+  next.insertAdjacentHTML(
+    'beforeend',
+    `<img src=${arrow_right} alt="стрелка в вправо" class="problems-arrow-right"> `,
+  );
 });
