@@ -1,3 +1,8 @@
+@media screen and (max-width: 375px) {
+  .margin-bottom5 {
+    margin-bottom: 37px;
+  }
+}
 .problems {
   font-family: Montserrat;
   padding-top: 50px;
@@ -39,10 +44,12 @@
   margin-bottom: 37px;
 }
 
-.margin-bottom3 {
+.margin-bottom3,
+.margin-bottom4 {
   margin-bottom: 16px;
 }
-.margin-bottom5 {
+.margin-bottom5,
+.margin-bottom2 {
   margin-bottom: 58px;
 }
 .problems-descriprtion {
@@ -81,4 +88,46 @@
   bottom: -30px;
   background: none;
   border: none;
+}
+@media screen and (max-width: 374px) {
+  .margin-bottom2 {
+    margin-bottom: 37px;
+  }
+  .margin-bottom4 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .problems-list.container,
+  .container {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .problems-title {
+    font-size: 36px;
+    line-height: 1.39;
+  }
+  .problems-item {
+    margin: 0 21.5px;
+  }
+  .slick-prev.slick-arrow {
+    left: 70px;
+  }
+  .slick-next.slick-arrow {
+    right: 70px;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .margin-bottom2 {
+    margin-bottom: 37px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .problems-item {
+    margin: 0 42px;
+  }
 }

@@ -2,17 +2,18 @@ import arrow_left from '../images/mobile/problems/arrow_left.png';
 import arrow_right from '../images/mobile/problems/arrow_right.png';
 $(document).ready(function () {
   $('.problems-list').slick({
-    centerMode: true,
-    centerPadding: '60px',
     slidesToShow: 3,
+    infinite: true,
+    slidesToScroll: 3,
+
     responsive: [
       {
         breakpoint: 1440,
         settings: {
           arrows: true,
-          centerMode: true,
-          centerPadding: '40px',
           slidesToShow: 2,
+          infinite: true,
+          slidesToScroll: 2,
         },
       },
       {
