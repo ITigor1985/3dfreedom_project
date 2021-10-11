@@ -1,9 +1,10 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .margin-bottom5 {
     margin-bottom: 37px;
   }
 }
 .problems {
+  position: relative;
   font-family: Montserrat;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -108,15 +109,18 @@
   .problems-title {
     font-size: 36px;
     line-height: 1.39;
+    margin-bottom: 63px;
   }
   .problems-item {
     margin: 0 21.5px;
   }
   .slick-prev.slick-arrow {
     left: 70px;
+    bottom: -50px;
   }
   .slick-next.slick-arrow {
     right: 70px;
+    bottom: -50px;
   }
   .slick-track {
     display: flex;
@@ -127,7 +131,57 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .problems {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .problems-item {
-    margin: 0 42px;
+    margin: 0 46.5px;
+    padding: 38px 0px;
+  }
+  .problems-descriprtion-title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 25px;
+  }
+  .problems-descriprtion {
+    height: 161px;
+    margin-left: 28px;
+    margin-right: 28px;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  .margin-bottom2,
+  .margin-bottom5 {
+    margin-bottom: 53px;
+  }
+  .problems-title {
+    padding-left: 98px;
+    font-size: 48px;
+    line-height: 1.4;
+    margin-bottom: 110px;
+  }
+  .problems-title::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 138px;
+    width: 26%;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
+  }
+  .problems-description-item1 {
+    margin-bottom: 13px;
+  }
+  .slick-prev.slick-arrow {
+    left: 110px;
+    bottom: -70px;
+  }
+  .slick-next.slick-arrow {
+    right: 110px;
+    bottom: -70px;
   }
 }
