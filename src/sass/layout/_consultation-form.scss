@@ -1,0 +1,100 @@
+.consultation__form {
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.modal-form__input-wrapper {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.modal-form__input {
+  font-family: Roboto, sans-serif;
+  width: 244px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 96px;
+  padding-left: 17px;
+  border: 1px solid #383838;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(56, 56, 56, 0.5);
+}
+
+.consultation__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: #383838;
+  margin-bottom: 54px;
+}
+.consultation__form-button {
+  background: radial-gradient(14.38% 469.39% at 50% 50%, #ffe791 0%, #ffaf28 100%);
+  border-radius: 174px;
+  align-items: center;
+  width: 243px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@media screen and (min-width: 768px) {
+  .consultation__title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .modal-form__input {
+    width: 322px;
+    height: 50px;
+    border-radius: 96px;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .consultation__form-button {
+    background: radial-gradient(14.38% 469.39% at 50% 50%, #ffe791 0%, #ffaf28 100%);
+    border-radius: 174px;
+    width: 322px;
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .consultation__form {
+    flex-direction: row;
+  }
+  .modal-form__input {
+    width: 400px;
+    height: 70px;
+    border-radius: 96px;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-right: 20px;
+  }
+  .modal-form__input-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .consultation__form-button {
+    background: radial-gradient(14.38% 469.39% at 50% 50%, #ffe791 0%, #ffaf28 100%);
+    border-radius: 174px;
+    width: 400px;
+    height: 70px;
+    font-size: 18px;
+    line-height: 1.39;
+    margin: 0 0;
+  }
+}
