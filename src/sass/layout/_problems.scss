@@ -132,8 +132,13 @@
 }
 @media screen and (min-width: 1440px) {
   .problems {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
+  }
+  .problems-container {
+    position: relative;
+    margin: 0 auto;
+    width: 1440px;
   }
   .problems-item {
     margin: 0 46.5px;
@@ -160,14 +165,14 @@
     padding-left: 98px;
     font-size: 48px;
     line-height: 1.4;
-    margin-bottom: 110px;
+    margin-bottom: 60px;
   }
   .problems-title::after {
     content: ' ';
     display: block;
     position: absolute;
     right: 0%;
-    top: 138px;
+    top: 38px;
     width: 26%;
     height: 5px;
     background-color: #ff7d28;
