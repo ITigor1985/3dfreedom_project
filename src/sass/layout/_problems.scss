@@ -7,13 +7,18 @@
   display: flex;
   position: relative;
 }
+.slick-track {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .problems-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.42;
   color: #ff7d28;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .problems-item {
   padding: 38px 28px;
@@ -56,23 +61,7 @@
 .problems-description-item1 {
   margin-bottom: 20px;
 }
-.button-slick {
-  position: absolute;
-  bottom: -30px;
-  background: #383838;
-  border: 3px solid #ffaf28;
-  color: white;
-  align-self: flex-end;
-}
-.button-slick-right {
-  position: absolute;
-  right: 0;
-  bottom: -30px;
-  background: #383838;
-  border: 3px solid #ffaf28;
-  color: white;
-  align-self: flex-end;
-}
+
 .problems-list.container {
   padding-left: 0;
   padding-right: 0;
