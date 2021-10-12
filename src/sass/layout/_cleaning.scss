@@ -1,0 +1,25 @@
+.cleaning .slick-list {
+  overflow: hidden;
+}
+.cleaning .slick-track {
+  display: flex;
+  margin-bottom: 40px;
+}
+.cleaning .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+}
+.cleaning .slick-dots button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+}
+.cleaning .slick-dots li {
+  margin-left: 10px;
+}
+.cleaning .slick-dots li.slick-active button {
+  background: radial-gradient(44.05% 44.05% at 50% 50%, #ffe790 0%, #ffaf28 100%);
+}
