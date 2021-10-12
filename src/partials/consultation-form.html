@@ -2,26 +2,24 @@
   <div class="container">
     <h2 class="consultation__title">Закажите бесплатную консультацию специалиста!</h2>
     <form class="consultation__form">
-      <div class="modal-form__input-wrapper">
-        <input
-          class="modal-form__input"
-          minlength="2"
-          type="text"
-          name="username"
-          id="form-name"
-          placeholder="Имя"
-        />
-      </div>
+      <input
+        class="modal-form__input"
+        minlength="2"
+        type="text"
+        name="username"
+        id="form-name"
+        placeholder="Имя"
+        required
+      />
+      <input
+        class="modal-form__input"
+        type="tel"
+        name="telephon"
+        id="form-telephon"
+        placeholder="Ваш телефон"
+        required
+      />
 
-      <div class="modal-form__input-wrapper">
-        <input
-          class="modal-form__input"
-          type="tel"
-          name="telephon"
-          id="form-telephon"
-          placeholder="Ваш телефон"
-        />
-      </div>
       <button class="consultation__form-button" type="submit">Вызвать специалиста</button>
     </form>
   </div>
