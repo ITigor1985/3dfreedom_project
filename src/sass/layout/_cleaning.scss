@@ -70,3 +70,68 @@ ul.slick-dots {
 .mb {
   margin-bottom: 50px;
 }
+
+@media screen and (min-width: 768px) {
+  .cleaning.section {
+    padding: 36px 0;
+  }
+  .cleaning-title {
+    font-size: 36px;
+    line-height: 1.39;
+    margin-bottom: 26px;
+  }
+  .block {
+    display: flex;
+    justify-content: space-around;
+  }
+  .block-wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  .block-wrapper:nth-child(2n) {
+    flex-direction: column;
+  }
+  .cleaning .width {
+    min-width: 164;
+  }
+  .smoke-black.width {
+    width: 178px;
+  }
+  .smoke-fire.width {
+    width: 164px;
+  }
+  .woods.width {
+    width: 235px;
+  }
+
+  .cleaning-image-mb {
+    margin-bottom: 20px;
+  }
+  .ignition.cleaning-image-mb {
+    margin-bottom: 39px;
+  }
+  .ignition.width {
+    width: 224px;
+  }
+  .cleaning-description-wrapper {
+    width: 280px;
+  }
+  .cleaning-description-title {
+    font-size: 24px;
+    line-height: 1.42;
+  }
+  .cleaning-description {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cleaning-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .block-wrapper {
+    margin-right: 60px;
+  }
+}

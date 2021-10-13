@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const width = document.body.clientWidth;
-  if (width <= 768) {
+  if (width <= 767) {
     $('.cleaning-wrapper').slick({
       dots: true,
       arrows: false,
