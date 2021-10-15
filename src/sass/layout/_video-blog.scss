@@ -1,0 +1,53 @@
+.video-blog__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #ff7d28;
+  margin-bottom: 50px;
+}
+.frame {
+  width: 335px;
+  height: 188px;
+  margin: 0 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .video-blog__title {
+    font-size: 36px;
+    line-height: 1.39;
+    text-align: center;
+  }
+  .frame {
+    width: 618px;
+    height: 346px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .video-blog .container {
+    position: relative;
+  }
+  .video-blog__title {
+    font-size: 48px;
+    line-height: 1.4;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+  .video-blog__title::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 38px;
+    width: 32%;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
+  }
+  .frame {
+    width: 1240px;
+    height: 699px;
+    margin: 0 25px;
+  }
+}
