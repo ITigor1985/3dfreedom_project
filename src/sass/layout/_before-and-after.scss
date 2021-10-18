@@ -69,7 +69,7 @@ ul.slick-dots {
   position: absolute;
   z-index: -1;
   top: 43px;
-  left: 155px;
+  left: 175px;
 }
 .block-wrapper.first {
   padding-left: 63px;
@@ -82,6 +82,12 @@ ul.slick-dots {
     padding-left: 23px;
   }
   .block-wrapper.second {
-    padding-left: 140px;
+    padding-left: 150px;
+  }
+  .before-and-after__img-arrow-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 43px;
+    left: 155px;
   }
 }
