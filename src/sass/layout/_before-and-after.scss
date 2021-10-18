@@ -1,0 +1,35 @@
+.before-and-after .slick-list {
+  overflow: hidden;
+}
+.before-and-after .slick-track {
+  display: flex;
+  align-items: self-end;
+  margin-bottom: 40px;
+}
+.before-and-after .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+}
+.before-and-after .slick-dots button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+}
+.before-and-after .slick-dots li {
+  margin-right: 10px;
+}
+.before-and-after .slick-dots li:last-child {
+  margin-right: 0;
+}
+.before-and-after .slick-dots li.slick-active button {
+  background: radial-gradient(44.05% 44.05% at 50% 50%, #ffe790 0%, #ffaf28 100%);
+}
+.before-and-after .slick-dots li button {
+  background: #c4c4c4;
+}
+ul.slick-dots {
+  padding-left: 0;
+}
