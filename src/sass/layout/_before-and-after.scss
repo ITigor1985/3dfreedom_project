@@ -1,9 +1,11 @@
+.before-and-after .container {
+  background: #383838;
+}
 .before-and-after .slick-list {
   overflow: hidden;
 }
 .before-and-after .slick-track {
   display: flex;
-  align-items: self-end;
   margin-bottom: 40px;
 }
 .before-and-after .slick-dots {
@@ -32,4 +34,24 @@
 }
 ul.slick-dots {
   padding-left: 0;
+}
+.before-and-after__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #ff7d28;
+}
+.before-and-after__description {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.39;
+  color: #ffffff;
+}
+.before-and-after .block-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 47px;
 }
