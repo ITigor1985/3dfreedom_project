@@ -162,8 +162,8 @@ ul.slick-dots {
   .before-and-after__img-arrow-wrapper {
     position: absolute;
     z-index: -1;
-    top: 275px;
-    left: 90px;
+    top: 330px;
+    left: 372px;
   }
   .block-wrapper.first {
     flex-direction: column-reverse;
@@ -171,26 +171,25 @@ ul.slick-dots {
   }
   .block-wrapper.second {
     position: absolute;
-    top: 155px;
-    right: 230px;
+    top: 217px;
+    right: 235px;
+    margin-right: 0;
   }
   .before-and-after .slick-dots {
     display: flex;
+    margin-top: -90px;
     flex-direction: column;
+    align-items: start;
   }
   .before-and-after .slick-dots button {
-    padding-left: 0;
-    width: 17px;
+    width: 18px;
     height: 18px;
   }
   .before-and-after .slick-dots li {
+    margin-right: 0;
     margin-bottom: 20px;
   }
   .before-and-after .slick-dots li:last-child {
     margin-bottom: 0;
-  }
-
-  ul.slick-dots {
-    padding-left: 0;
   }
 }
