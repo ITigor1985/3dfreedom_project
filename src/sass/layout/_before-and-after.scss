@@ -12,7 +12,7 @@
 }
 .before-and-after .slick-track {
   display: flex;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 .before-and-after .slick-dots {
   display: flex;
@@ -47,6 +47,7 @@ ul.slick-dots {
   font-size: 24px;
   line-height: 1.42;
   text-align: center;
+  margin-bottom: 34px;
   color: #ff7d28;
 }
 .before-and-after__description {
@@ -89,5 +90,107 @@ ul.slick-dots {
     z-index: -1;
     top: 43px;
     left: 155px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .before-and-after .slick-track {
+    margin-bottom: 272px;
+  }
+  .before-and-after__title {
+    font-size: 36px;
+    line-height: 1.39;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .before-and-after__description {
+    font-size: 36px;
+    line-height: 1.39;
+  }
+  .before-and-after .block-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    // padding-left: 62px;
+  }
+  .before-and-after .block {
+    position: relative;
+  }
+  .before-and-after__img-arrow-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 275px;
+    left: 90px;
+  }
+  .block-wrapper.first {
+    flex-direction: column-reverse;
+    padding-left: 1px;
+  }
+  .block-wrapper.second {
+    position: absolute;
+    top: 155px;
+    right: 1px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .before-and-after .slick-track {
+    margin-bottom: 272px;
+  }
+  .before-and-after__title {
+    font-size: 36px;
+    line-height: 1.39;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .before-and-after__description {
+    font-size: 36px;
+    line-height: 1.39;
+  }
+  .before-and-after .block-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    // padding-left: 62px;
+  }
+  .before-and-after__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .before-and-after .block {
+    position: relative;
+  }
+  .before-and-after__img-arrow-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 275px;
+    left: 90px;
+  }
+  .block-wrapper.first {
+    flex-direction: column-reverse;
+    padding-left: 187px;
+  }
+  .block-wrapper.second {
+    position: absolute;
+    top: 155px;
+    right: 230px;
+  }
+  .before-and-after .slick-dots {
+    display: flex;
+    flex-direction: column;
+  }
+  .before-and-after .slick-dots button {
+    padding-left: 0;
+    width: 17px;
+    height: 18px;
+  }
+  .before-and-after .slick-dots li {
+    margin-bottom: 20px;
+  }
+  .before-and-after .slick-dots li:last-child {
+    margin-bottom: 0;
+  }
+
+  ul.slick-dots {
+    padding-left: 0;
   }
 }
