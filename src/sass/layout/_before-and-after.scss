@@ -46,6 +46,7 @@ ul.slick-dots {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.42;
+  text-align: center;
   color: #ff7d28;
 }
 .before-and-after__description {
@@ -71,5 +72,6 @@ ul.slick-dots {
   left: 175px;
 }
 .block-wrapper.second {
-  padding-left: 180px;
+  transform: translateX(33%);
+  // padding-left: 180px;
 }
