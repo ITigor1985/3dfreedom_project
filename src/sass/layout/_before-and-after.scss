@@ -60,7 +60,7 @@ ul.slick-dots {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-left: 62px;
+  // padding-left: 62px;
 }
 .before-and-after .block {
   position: relative;
@@ -69,9 +69,19 @@ ul.slick-dots {
   position: absolute;
   z-index: -1;
   top: 43px;
-  left: 175px;
+  left: 155px;
+}
+.block-wrapper.first {
+  padding-left: 63px;
 }
 .block-wrapper.second {
-  transform: translateX(33%);
-  // padding-left: 180px;
+  padding-left: 180px;
+}
+@media screen and (max-width: 367px) {
+  .block-wrapper.first {
+    padding-left: 23px;
+  }
+  .block-wrapper.second {
+    padding-left: 140px;
+  }
 }
