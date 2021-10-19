@@ -132,15 +132,31 @@ ul.slick-dots {
   }
 }
 @media screen and (min-width: 1440px) {
+  .before-and-after .container {
+    position: relative;
+  }
   .before-and-after .slick-track {
     margin-bottom: 272px;
   }
   .before-and-after__title {
-    font-size: 36px;
-    line-height: 1.39;
-    text-align: left;
-    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.4;
+    text-align: right;
+    margin-bottom: 43px;
   }
+
+  .before-and-after__title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0%;
+    top: 65px;
+    width: 700px;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
+  }
+
   .before-and-after__description {
     font-size: 36px;
     line-height: 1.39;

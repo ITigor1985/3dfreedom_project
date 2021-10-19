@@ -1,0 +1,37 @@
+.servise.container {
+  background: url('../images/mobile/service/bg-mobile.png') no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.service__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.42;
+  color: #ff7d28;
+  margin-bottom: 21px;
+}
+.service-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-step-deskription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .servise.container {
+    background: url('../images/tablet/service/bg-tablet.png') no-repeat;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .servise.container {
+    background: url('../images/desktop/service/bg-desktop2.jpg') no-repeat;
+  }
+}
