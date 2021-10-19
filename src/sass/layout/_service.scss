@@ -23,6 +23,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-step-img {
+  margin-bottom: 24px;
+}
+
+.service-step-description-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.58;
+  color: #383838;
+  margin-bottom: 20px;
+}
+.service-btn {
+  margin-bottom: 30px;
+}
+
+.service-step-description-desk {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #383838;
 }
 
 @media screen and (min-width: 768px) {
