@@ -60,11 +60,16 @@
   }
   .service-step {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
   }
   .service-step:nth-child(2n) {
     flex-direction: row-reverse;
+  }
+  .service-step-description-desk {
+    text-align: center;
+  }
+  .clean {
+    min-width: 355px;
   }
 }
 @media screen and (min-width: 1440px) {
