@@ -58,19 +58,126 @@
   .servise.container {
     background: url('../images/tablet/service/bg-tablet.png') no-repeat;
   }
+  .service__title {
+    @include font(36px, 50px);
+    margin-bottom: 35px;
+  }
   .service-step {
     flex-direction: row;
-    justify-content: space-around;
+    flex-basis: 50%;
   }
+
   .service-step:nth-child(2n) {
     flex-direction: row-reverse;
   }
+  .service-step-description-title {
+    @include font(36px, 56px);
+  }
+  .service-step-img {
+    flex-basis: 60%;
+    margin-right: 0;
+  }
+  .service-step-deskription {
+    position: relative;
+    flex-basis: 40%;
+  }
   .service-step-description-desk {
-    text-align: center;
+    @include font(18px, 28px);
+
+    text-align: left;
+  }
+  .padding-top {
+    padding-top: 100px;
+  }
+  .service-btn {
+    @include button-padding(41px);
+  }
+  .title-absolute {
+    position: absolute;
+    width: 310px;
+    left: 0px;
   }
 }
 @media screen and (min-width: 1440px) {
   .servise.container {
     background: url('../images/desktop/service/bg-desktop2.jpg') no-repeat;
+  }
+  .servise.container {
+    position: relative;
+    padding-top: 30px;
+    height: 1484px;
+  }
+  .service__title {
+    @include font(48px, 67px);
+    text-align: left;
+  }
+  .service__title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0%;
+    top: 65px;
+    width: 825px;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
+  }
+  .service-steps {
+    position: static;
+  }
+  .service-step.first {
+    position: absolute;
+    left: 220px;
+  }
+  .service-step.second {
+    position: absolute;
+    left: 850px;
+    top: 500px;
+  }
+  .service-step-deskription {
+    display: block;
+  }
+
+  .service-step.therd {
+    position: absolute;
+    left: 220px;
+    top: 800px;
+  }
+  .service-step {
+    flex-direction: column;
+    display: block;
+    align-items: start;
+    justify-content: start;
+    flex-basis: none;
+  }
+  .title-absolute {
+    position: static;
+  }
+  .service-step:nth-child(2n) {
+    flex-direction: column;
+  }
+  .padding-top {
+    padding-top: 0px;
+  }
+  .service-step-description-title {
+    @include font(36px, 44px);
+    margin-bottom: 32px;
+  }
+  .service-step-description-desk {
+    @include font(18px, 21px);
+  }
+  .service-step-description-desk.bot {
+    margin-bottom: 34px;
+  }
+  .width1 {
+    width: 308px;
+  }
+  .width2 {
+    left: 100px;
+    width: 295px;
+  }
+  .width3 {
+    top: -30px;
+    width: 426px;
   }
 }
