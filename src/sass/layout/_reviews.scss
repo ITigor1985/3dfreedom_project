@@ -45,10 +45,7 @@
   text-align: center;
   margin-bottom: 20px;
 }
-.reviews__list {
-  padding-left: 21px;
-  padding-right: 21px;
-}
+
 .reviews__card {
   height: 367px;
   background-color: #fff;
@@ -87,16 +84,43 @@
   @include font(14px, 20px);
   color: #000000;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .reviews__title {
     @include font(36px, 50px);
     text-align: left;
     margin-bottom: 60px;
   }
-  .reviews__list {
-    padding-left: 106px;
-    padding-right: 106px;
+
+  .reviews__card {
+    height: 533px;
+    width: 556px;
+    padding: 50px 77px;
   }
+  .reviews__city {
+    margin-bottom: 162px;
+  }
+  .photo {
+    float: left; /* Выравнивание по левому краю */
+    margin: 7px 24px 0 0; /* Отступы вокруг картинки */
+  }
+
+  .reviews__name {
+    @include font(24px, 28px);
+  }
+  .reviews__city {
+    @include font(24px, 28px);
+  }
+  .reviews__description-text {
+    @include font(18px, 26px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews__title {
+    @include font(48px, 67px);
+    text-align: right;
+    margin-bottom: 60px;
+  }
+
   .reviews__card {
     height: 533px;
     width: 556px;
