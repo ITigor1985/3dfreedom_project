@@ -106,6 +106,8 @@
 
   .reviews__name {
     @include font(24px, 28px);
+    display: inline-block;
+    margin-bottom: 11px;
   }
   .reviews__city {
     @include font(24px, 28px);
@@ -115,27 +117,44 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .reviews.container {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .reviews__title {
     @include font(48px, 67px);
     text-align: right;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
+  }
+  .reviews__title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0%;
+    top: 97px;
+    width: 1150px;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
   }
 
   .reviews__card {
-    height: 533px;
-    width: 556px;
-    padding: 50px 77px;
+    height: 524px;
+    width: 1030px;
+    padding: 80px 109px;
   }
   .reviews__city {
-    margin-bottom: 162px;
+    margin-bottom: 39px;
   }
   .photo {
     float: left; /* Выравнивание по левому краю */
-    margin: 7px 24px 0 0; /* Отступы вокруг картинки */
+    margin: 7px 56px 0 0; /* Отступы вокруг картинки */
   }
 
   .reviews__name {
     @include font(24px, 28px);
+    margin-bottom: 12px;
   }
   .reviews__city {
     @include font(24px, 28px);
