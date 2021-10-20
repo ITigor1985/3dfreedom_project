@@ -1,13 +1,89 @@
 .reviews.container {
   background-color: #383838;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.reviews .slick-list {
+  overflow: hidden;
+}
+.reviews .slick-track {
+  display: flex;
+  margin-bottom: 30px;
+}
+.reviews .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+}
+.reviews .slick-dots button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+}
+.reviews .slick-dots li {
+  margin-right: 10px;
+}
+.before-and-after .slick-dots li:last-child {
+  margin-right: 0;
+}
+.reviews .slick-dots li.slick-active button {
+  background: radial-gradient(44.05% 44.05% at 50% 50%, #ffe790 0%, #ffaf28 100%);
+}
+.reviews .slick-dots li button {
+  background: #c4c4c4;
+}
+.reviews ul.slick-dots {
+  padding-left: 0;
+}
+.reviews__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  @include font(24px, 34px);
+  color: #ff7d28;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.reviews__list {
+  padding-left: 21px;
+  padding-right: 21px;
 }
 .reviews__card {
+  height: 367px;
   background-color: #fff;
   min-width: 290px;
   margin: 0 auto;
   padding: 40px 23px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
-.reviews__profile {
-  display: flex;
-  margin-bottom: 20px;
+.reviews__city {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+.photo {
+  float: left; /* Выравнивание по левому краю */
+  margin: 7px 20px 0 0; /* Отступы вокруг картинки */
+}
+
+.reviews__name {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(18px, 21px);
+  color: #383838;
+}
+.reviews__city {
+  font-family: Roboto;
+  font-weight: 500;
+  @include font(18px, 21px);
+  color: #383838;
+}
+.reviews__description-text {
+  font-family: Roboto;
+  font-weight: normal;
+  @include font(14px, 20px);
+  color: #000000;
 }
