@@ -37,6 +37,12 @@
   letter-spacing: 0.05em;
   color: #ff7d28;
 }
+.price__link {
+  font-weight: 700;
+  @include font(14px, 20px);
+  color: #383838;
+  padding: 5px 36px;
+}
 @media screen and(min-width:768px) {
 }
 @media screen and(min-width:1440px) {
