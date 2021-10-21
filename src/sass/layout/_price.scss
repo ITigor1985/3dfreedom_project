@@ -1,0 +1,49 @@
+.price.container.desktop {
+  display: none;
+}
+.price.container {
+  font-family: Montserrat;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.price__title {
+  font-weight: 700;
+  @include font(24px, 34px);
+  color: #ff7d28;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.price__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.price__item-title {
+  font-style: normal;
+  font-weight: 800;
+  @include font(14px, 20px);
+  color: #585858;
+  margin-bottom: 15px;
+}
+.price__item-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price__cost {
+  font-weight: 700;
+  @include font(14px, 20px);
+  letter-spacing: 0.05em;
+  color: #ff7d28;
+}
+@media screen and(min-width:768px) {
+}
+@media screen and(min-width:1440px) {
+  .price.container.mobile-tablet {
+    display: none;
+  }
+  .price.container.desktop {
+    display: block;
+  }
+}
