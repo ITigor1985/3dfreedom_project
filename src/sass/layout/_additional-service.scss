@@ -85,7 +85,24 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .additional-service__title {
+    @include font(48px, 67px);
+    margin-bottom: 110px;
+    text-align: right;
+  }
+  .additional-service__title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0%;
+    top: 85px;
+    width: 700px;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
+  }
   .additional-service.container {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 85px;
   }
@@ -111,5 +128,8 @@
   .additional-service__link {
     @include font(24px, 34px);
     padding: 18px 55px;
+  }
+  .additional-service__img {
+    margin-bottom: 40px;
   }
 }
