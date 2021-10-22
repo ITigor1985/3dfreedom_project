@@ -1,5 +1,6 @@
 .footer-container.container {
   padding-top: 30px;
+  padding-bottom: 30px;
   background: #383838;
   color: white;
 }
@@ -44,4 +45,33 @@
 }
 .footer-logo {
   margin-bottom: 20px;
+}
+.footer__soc-title {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(14px, 19px);
+  color: #ff7d28;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.footer__soc-item {
+  display: flex;
+  align-items: center;
+}
+.footer__soc-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.link-viber {
+  margin-right: 30px;
+}
+.footer__soc-item img {
+  margin-right: 9px;
+}
+.copyright {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(12px, 16px);
+  text-align: center;
 }
