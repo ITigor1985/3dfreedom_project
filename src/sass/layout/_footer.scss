@@ -1,7 +1,47 @@
 .footer-container.container {
   padding-top: 30px;
   background: #383838;
+  color: white;
 }
 .footer__contacts_wrapper {
   display: flex;
+}
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+  font-family: Roboto;
+  font-weight: 500;
+  @include font(12px, 19px);
+}
+.footer__work-schedule-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+.footer__contact {
+  margin-right: 58px;
+}
+.footer__contact-item img {
+  margin-right: 5px;
+}
+.footer__work-schedule-item img {
+  margin-right: 5px;
+}
+.footer__contact-title {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(14px, 19px);
+  color: #ff7d28;
+  margin-bottom: 14px;
+}
+.footer__schedule-title {
+  font-family: Roboto;
+  font-weight: 700;
+  @include font(14px, 19px);
+  color: #ff7d28;
+  margin-bottom: 14px;
+}
+.footer-logo {
+  margin-bottom: 20px;
 }
