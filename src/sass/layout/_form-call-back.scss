@@ -1,0 +1,33 @@
+.form-call-back.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.form-call-back__wrapper {
+  margin: 0 auto;
+  padding: 40px 38px;
+  box-shadow: 0px 6px 20px 13px rgba(88, 88, 88, 0.2);
+  border-radius: 24px;
+}
+.call-back {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form-call-back__title {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  @include font(18px, 21px);
+  text-align: center;
+  color: #585858;
+  margin-bottom: 10px;
+}
+.form-call-back__call-back {
+  font-family: Roboto;
+  font-weight: 500;
+  @include font(14px, 16px);
+  text-align: center;
+  color: #585858;
+  margin-bottom: 20px;
+}
+.consultation__form-button {
+  width: 100%;
+}
