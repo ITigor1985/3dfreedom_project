@@ -21,7 +21,7 @@
   margin-bottom: 10px;
 }
 .form-call-back__call-back {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   @include font(14px, 16px);
   text-align: center;
@@ -30,4 +30,53 @@
 }
 .consultation__form-button {
   width: 100%;
+}
+@media screen and(min-width:768px) {
+  .form-call-back.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .form-call-back__wrapper {
+    padding: 45px 70px;
+  }
+  .call-back {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .form-call-back__title {
+    @include font(24px, 28px);
+    margin-bottom: 10px;
+  }
+  .form-call-back__call-back {
+    @include font(18px, 21px);
+    margin-bottom: 40px;
+  }
+}
+@media screen and(min-width:1440px) {
+  .form-call-back.container {
+    padding: 85px 310px;
+    margin: 0px 0px;
+  }
+  .form-call-back__wrapper {
+    padding: 51px 100px;
+  }
+  .call-back {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .form-call-back__title {
+    @include font(36px, 42px);
+    margin-bottom: 10px;
+  }
+  .form-call-back__call-back {
+    @include font(24px, 28px);
+    margin-bottom: 40px;
+  }
+  .form-call-back .modal-form__input::placeholder {
+    @include font(18px, 21px);
+    color: rgba(88, 88, 88, 0.7);
+  }
+  .form-call-back .consultation__form-button {
+    @include font(24px, 28px);
+  }
 }
