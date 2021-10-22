@@ -75,3 +75,11 @@
   @include font(12px, 16px);
   text-align: center;
 }
+.link-viber {
+  font-family: Roboto;
+  @include font(12px, 19px);
+}
+.link-telegram {
+  font-family: Roboto;
+  @include font(12px, 19px);
+}
