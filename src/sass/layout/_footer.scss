@@ -5,7 +5,9 @@
   color: white;
 }
 .footer__contacts_wrapper {
+  font-family: Roboto;
   display: flex;
+  justify-content: space-around;
 }
 .footer__contact-item {
   display: flex;
@@ -19,6 +21,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 9px;
+  @include font(12px, 16px);
 }
 .footer__contact {
   margin-right: 58px;
@@ -82,4 +85,87 @@
 .link-telegram {
   font-family: Roboto;
   @include font(12px, 19px);
+}
+
+@media screen and(min-width:768px) {
+  .footer-container.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer__all-contacts {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .footer__soc {
+    justify-content: center;
+  }
+  .footer__contact-title {
+    @include font(18px, 24px);
+  }
+  .footer__schedule-title {
+    @include font(18px, 24px);
+  }
+  .footer__soc-title {
+    @include font(18px, 24px);
+  }
+  .footer__contact-link {
+    @include font(14px, 22px);
+  }
+  .footer__work-schedule-item {
+    @include font(14px, 22px);
+  }
+  .copyright {
+    @include font(12px, 16px);
+  }
+}
+
+@media screen and(min-width:1440px) {
+  .footer-container.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .footer__soc {
+    justify-content: center;
+  }
+  .copyright {
+    position: absolute;
+    bottom: 100px;
+    right: 150px;
+    text-align: left;
+  }
+
+  .footer__contact-title {
+    @include font(24px, 32px);
+  }
+  .footer__schedule-title {
+    @include font(24px, 32px);
+  }
+  .footer__soc-title {
+    @include font(24px, 32px);
+  }
+  .footer__contact-link {
+    @include font(18px, 28px);
+  }
+  .footer__work-schedule-item {
+    @include font(18px, 24px);
+  }
+  .copyright {
+    @include font(12px, 16px);
+  }
+  .footer-logo {
+    margin-left: 30px;
+    margin-right: 110px;
+  }
+  .footer__contacts {
+    margin-right: 110px;
+  }
+  .footer__work-schedule {
+    margin-right: 70px;
+  }
+  .perenos {
+    display: block;
+  }
 }
