@@ -13,7 +13,7 @@
             <a href="#" class="header-link link">Наши работы</a>
             <a href="#" class="header-link link">Прайс</a>
         </div>
-        <button type="button" class="call">
+        <button type="button" class="call  hero__button" data-modal-open>
             <picture>            
                 <source media="(min-width: 1440px)" 
                 srcset="images/desktop/header/icon_phone-desktop.png 1x"/>            
@@ -48,5 +48,40 @@
         </ul>
         <button type="button" class="button">Вызвать специалиста</button>
     
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button type="button" class="modal-window__close-btn" data-modal-close>
+                <svg class="modal-window__icon-close" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <div class="header-phone_dropdown">
+                <ul class="call-button__list list ">
+                    <li class="call-button__item">
+                      <a class="call-button__link link" href="tel:+380732228557"> 073 222 85 57</a>
+                    </li>
+                    <li class="call-button__item">
+                      <a class="call-button__link link" href="tel:+380502228557"> 050 222 85 57</a>
+                    </li>
+                    <li class="call-button__item">
+                        <a class="call-button__link link" href="tel:+380682228557"> 068 222 85 57</a>
+                      </li>
+                  </ul>
+            </div>
+            <p class="modal-window__description">Чистка дымохода и
+                вентиляции от сажи</p>
+                <ul class="services__list">
+                    <li class="services__item">
+                      <p>Срочный выезд</p>
+                    </li>
+                    <li class="services__item">
+                      <p>Бесплатная консультация</p>
+                    </li>
+                    <li class="services__item">
+                       <p>Оплата удобным для вас способом</p> 
+                      </li>
+                  </ul>
+        </div>
     </div>
 </section>
