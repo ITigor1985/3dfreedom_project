@@ -1,3 +1,13 @@
+$('.header-link').click(function() {
+  var elementClick = $(this).attr('href');
+  var destination = $(elementClick).offset().top;
+  jQuery('html:not(:animated),body:not(:animated)').animate({
+          scrollTop: destination,
+      },
+      1000,
+  );
+  return false;
+});
 (() => {
     const refs = {
       openModalBtn: document.querySelector('[data-modal-open]'),
@@ -13,13 +23,4 @@
     }
   })();
 
-  $('a').click(function() {
-    var elementClick = $(this).attr('href');
-    var destination = $(elementClick).offset().top;
-    jQuery('html:not(:animated),body:not(:animated)').animate({
-            scrollTop: destination,
-        },
-        500,
-    );
-    return false;
-});
+

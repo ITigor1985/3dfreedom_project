@@ -223,18 +223,11 @@
   color: #383838;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .modal-window {
     width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) {
-}
-
 @media screen and (min-width: 1440px) {
-  .modal-window {
-    width: 528px;
-    height: 581px;
-  }
 }
