@@ -120,6 +120,7 @@
   margin-bottom: 22px;
 }
 .call-button__item {
+  //@include font(36px, 42px);
   margin-bottom: 16px;
   &:last-child {
     margin-bottom: 0;
@@ -130,17 +131,22 @@
   font-weight: 700;
   @include font(18px, 22px);
   color: #ffaf28;
-  padding-right: 70px;
+  padding-right: 150px;
 }
 .services__list {
   padding-left: 15px;
-  padding-right: 70px;
+  padding-right: 130px;
 }
 .services__item {
   font-family: Montserrat;
   font-weight: 600;
   @include font(12px, 17px);
   color: #383838;
+}
+.img-trybochist {
+  position: absolute;
+  bottom: 57px;
+  right: 57px;
 }
 
 @media screen and (min-width: 768px) {
@@ -186,7 +192,14 @@
     color: #383838;
   }
   .modal-window {
-    width: 450px;
+    width: 564px;
+  }
+  .modal-window__description {
+    padding-right: 250px;
+    @include font(20px, 24px);
+  }
+  .call-button__link {
+    @include font(30px, 35px);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -219,5 +232,8 @@
     font-size: 24px;
     line-height: 1.21;
     color: #383838;
+  }
+  .modal-window {
+    width: 642px;
   }
 }
