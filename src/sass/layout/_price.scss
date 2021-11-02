@@ -90,7 +90,7 @@
   .price__title {
     @include font(48px, 67px);
     margin-bottom: 102px;
-    &::before {
+    &::after {
       content: '';
       position: absolute;
       display: block;
