@@ -106,8 +106,8 @@
   display: block;
   justify-content: center;
   align-items: center;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 15px;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -139,7 +139,7 @@
   font-weight: 700;
   @include font(18px, 22px);
   color: #ffaf28;
-  padding-right: 150px;
+  padding-right: 130px;
 }
 .services__list {
   padding-left: 15px;
@@ -154,7 +154,17 @@
 .img-trybochist {
   position: absolute;
   bottom: 57px;
-  right: 57px;
+  right: 50px;
+}
+@media screen and (max-width: 374px) {
+  .img-trybochist {
+    position: absolute;
+    bottom: 57px;
+    right: 30px;
+  }
+  .modal-window__description {
+    padding-right: 100px;
+  }
 }
 
 @media screen and (min-width: 768px) {

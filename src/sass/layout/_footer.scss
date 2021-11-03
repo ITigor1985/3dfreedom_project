@@ -89,6 +89,12 @@
   font-family: Roboto;
   @include font(12px, 19px);
 }
+@media screen and (max-width: 374px) {
+  .footer__contact {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+  }
+}
 
 @media screen and(min-width:768px) {
   .footer-container.container {
