@@ -279,6 +279,9 @@
       left: 0;
     }
   }
+  .modal-window {
+    width: 50%;
+  }
   .modal-window__description {
     @include font(24px, 29px);
   }
