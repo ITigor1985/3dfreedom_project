@@ -117,6 +117,7 @@
 }
 
 .modal-window__icon-close {
+  z-index: 1000;
   color: #383838;
   fill: inherit;
   width: 18px;
