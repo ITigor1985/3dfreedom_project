@@ -77,6 +77,7 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
 .modal-window {
   position: absolute;
   top: 50%;
@@ -101,7 +102,7 @@
   }
 }
 .modal-window__close-btn {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   top: 8px;
