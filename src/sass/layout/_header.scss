@@ -1,8 +1,10 @@
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-top.section {
   background: #383838;
+}
+.header-top.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 86;
 }
 .header-menu {
