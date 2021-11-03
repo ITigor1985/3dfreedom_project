@@ -198,8 +198,23 @@
     padding-right: 250px;
     @include font(20px, 24px);
   }
+  .call-button__item {
+    position: relative;
+    padding-left: 55px;
+    display: flex;
+  }
   .call-button__link {
     @include font(30px, 35px);
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url('../images/tablet/header/telephone.png');
+      width: 35px;
+      height: 35px;
+      top: 0;
+      left: 0;
+    }
   }
 }
 @media screen and (min-width: 1440px) {
@@ -235,5 +250,37 @@
   }
   .modal-window {
     width: 642px;
+  }
+  .call-button__item {
+    position: relative;
+    padding-left: 62px;
+    display: flex;
+    align-items: center;
+  }
+  .call-button__link {
+    display: flex;
+    align-items: center;
+    @include font(48px, 56px);
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url('../images/desktop/header/telephone.png');
+      width: 47px;
+      height: 47px;
+      top: 5px;
+      left: 0;
+    }
+  }
+  .modal-window__description {
+    @include font(24px, 29px);
+  }
+  .img-trybochist {
+    position: absolute;
+    bottom: 55px;
+    right: 0px;
+  }
+  .services__item {
+    @include font(18px, 25px);
   }
 }
