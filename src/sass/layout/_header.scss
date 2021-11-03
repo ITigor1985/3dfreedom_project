@@ -8,6 +8,12 @@
 .header-menu {
   display: none;
 }
+.header-price .header-link {
+  font-family: Montserrat;
+  font-weight: 600;
+  @include font(18px, 25px);
+  color: #ffffff;
+}
 .call {
   background-color: transparent;
   border: none;
@@ -152,6 +158,9 @@
 @media screen and (min-width: 768px) {
   .header-top {
     justify-content: space-around;
+  }
+  .header-price {
+    display: none;
   }
   .header-menu {
     display: block;
