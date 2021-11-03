@@ -54,6 +54,7 @@
 }
 @media screen and(min-width:1440px) {
   .form-call-back.container {
+    position: relative;
     padding: 85px 310px;
     margin: 0px auto;
   }
@@ -63,6 +64,16 @@
   .call-back {
     padding-left: 110px;
     padding-right: 110px;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 408px;
+      height: 575px;
+      background-image: url('../images/desktop/form-call-back/trub.png');
+      right: 108px;
+      bottom: 0;
+    }
   }
   .form-call-back__title {
     @include font(36px, 42px);
