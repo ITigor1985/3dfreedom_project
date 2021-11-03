@@ -6,17 +6,18 @@
 
 @media screen and (min-width: 375px) {
   .container {
+    width: 100%;
     max-width: 425px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 769px;
+    max-width: 769px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1439px;
+    max-width: 1439px;
     padding-left: 100px;
     padding-right: 100px;
   }
