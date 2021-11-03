@@ -79,6 +79,7 @@
 }
 
 .modal-window {
+  overflow: visible;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -201,9 +202,7 @@
     line-height: 1.38;
     color: #383838;
   }
-  .modal-window {
-    width: 564px;
-  }
+
   .modal-window__description {
     padding-right: 250px;
     @include font(20px, 24px);
@@ -258,9 +257,7 @@
     line-height: 1.21;
     color: #383838;
   }
-  .modal-window {
-    width: 642px;
-  }
+
   .call-button__item {
     position: relative;
     padding-left: 62px;
