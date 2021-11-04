@@ -64,7 +64,7 @@ ul.slick-dots {
 }
 
 @media screen and(min-width: 768px) {
-  .slick-initialized .slick-slide {
+  .instruments .slick-initialized .slick-slide {
     display: flex;
     justify-content: space-between;
   }
@@ -77,5 +77,28 @@ ul.slick-dots {
   }
   .instruments__title {
     @include font(36px, 50px);
+  }
+}
+
+@media screen and(min-width: 1440px) {
+  .instruments-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .instruments__title {
+    @include font(48px, 67px);
+    margin-bottom: 90px;
+  }
+  .instruments-description {
+    display: none;
+  }
+  .instruments-img-wrapper {
+    margin-bottom: 0px;
+  }
+  .instruments__block-wrapper {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
