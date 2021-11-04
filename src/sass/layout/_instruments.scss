@@ -62,3 +62,20 @@ ul.slick-dots {
   @include font(24px, 29px);
   color: #ffaf28;
 }
+
+@media screen and(min-width: 768px) {
+  .slick-initialized .slick-slide {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .instruments__block-wrapper {
+    margin-bottom: 0px;
+  }
+  .instruments .slick-track {
+    margin-bottom: 25px;
+  }
+  .instruments__title {
+    @include font(36px, 50px);
+  }
+}
