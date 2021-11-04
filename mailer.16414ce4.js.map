@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/mailer.js"],"names":["formEl","document","querySelector","console","log"],"mappings":";AAAA,MAAMA,EAASC,SAASC,cAAc,cACtCC,QAAQC,IAAIJ","file":"mailer.16414ce4.js","sourceRoot":"../src","sourcesContent":["const formEl = document.querySelector('.call-back');\nconsole.log(formEl);"]}
