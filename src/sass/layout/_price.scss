@@ -1,6 +1,3 @@
-// .price.container.desktop {
-//   display: none;
-// }
 .price.container {
   font-family: Montserrat;
   padding-top: 50px;
@@ -50,16 +47,11 @@
   }
 }
 @media screen and(min-width:768px) {
-  // .price.container.mobile-tablet {
-  //   display: none;
-  // }
   .price.container {
     padding-top: 60px;
     padding-bottom: 30px;
   }
-  // .price.container.desktop {
-  //   display: inline-block;
-  // }
+
   .price__title {
     @include font(36px, 50px);
     text-align: left;
@@ -85,9 +77,6 @@
   }
 }
 @media screen and(min-width:1440px) {
-  // .price.container.mobile-tablet {
-  //   display: none;
-  // }
   .price.container {
     position: relative;
     padding-top: 100px;
