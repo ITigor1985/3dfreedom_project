@@ -9,3 +9,56 @@
   color: #ff7d28;
   margin-bottom: 50px;
 }
+.instruments .slick-list {
+  overflow: hidden;
+}
+.instruments .slick-track {
+  display: flex;
+  margin-bottom: 30px;
+}
+.instruments .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+}
+.instruments .slick-dots button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+}
+.instruments .slick-dots li {
+  margin-right: 10px;
+}
+.instruments .slick-dots li:last-child {
+  margin-right: 0;
+}
+.instruments .slick-dots li.slick-active button {
+  background: radial-gradient(44.05% 44.05% at 50% 50%, #ffe790 0%, #ffaf28 100%);
+}
+.instruments .slick-dots li button {
+  background: #c4c4c4;
+  cursor: pointer;
+}
+ul.slick-dots {
+  padding-left: 0;
+}
+.instruments__block-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.instruments-img-wrapper {
+  margin-bottom: 15px;
+}
+.instruments-description {
+  font-family: Montserrat;
+  font-weight: 700;
+  @include font(24px, 29px);
+  color: #ffaf28;
+}
