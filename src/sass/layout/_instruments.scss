@@ -62,6 +62,9 @@ ul.slick-dots {
   @include font(24px, 29px);
   color: #ffaf28;
 }
+.instruments-description-drop {
+  display: none;
+}
 
 @media screen and(min-width: 768px) {
   .instruments .slick-initialized .slick-slide {
@@ -81,6 +84,10 @@ ul.slick-dots {
 }
 
 @media screen and(min-width: 1440px) {
+  .instruments.section {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
   .instruments-wrapper {
     display: flex;
     justify-content: space-between;
@@ -88,12 +95,38 @@ ul.slick-dots {
   .instruments__title {
     @include font(48px, 67px);
     margin-bottom: 90px;
+    text-align: center;
+  }
+
+  .instruments-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0px;
   }
   .instruments-description {
     display: none;
   }
-  .instruments-img-wrapper {
-    margin-bottom: 0px;
+  .instruments-description-drop {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 4px dashed #ffaf28;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 77px 16px;
+    @include font(36px, 44px);
+    font-weight: 700;
+    color: #ffaf28;
+    background: rgba(56, 56, 56, 0.8);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .instruments-img-wrapper:hover & {
+      transform: translateY(0%);
+    }
   }
   .instruments__block-wrapper {
     margin-bottom: 50px;
