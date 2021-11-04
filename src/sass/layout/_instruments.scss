@@ -1,0 +1,11 @@
+.instruments.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.instruments__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  @include font(24px, 34px);
+  color: #ff7d28;
+  margin-bottom: 50px;
+}
