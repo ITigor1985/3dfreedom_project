@@ -4,7 +4,7 @@
 }
 .form-call-back__wrapper {
   margin: 0 auto;
-  padding: 40px 38px;
+  padding: 40px 10px;
   box-shadow: 0px 6px 20px 13px rgba(88, 88, 88, 0.2);
   border-radius: 24px;
 }
@@ -26,7 +26,6 @@
   @include font(14px, 16px);
   text-align: center;
   color: #585858;
-  margin-bottom: 20px;
 }
 .consultation__form-button {
   width: 100%;
@@ -49,7 +48,6 @@
   }
   .form-call-back__call-back {
     @include font(18px, 21px);
-    margin-bottom: 40px;
   }
 }
 @media screen and(min-width:1440px) {
@@ -81,7 +79,6 @@
   }
   .form-call-back__call-back {
     @include font(24px, 28px);
-    margin-bottom: 40px;
   }
   .form-call-back .modal-form__input::placeholder {
     @include font(18px, 21px);
