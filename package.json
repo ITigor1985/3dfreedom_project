@@ -6,7 +6,7 @@
   "homepage": "https://ITigor1985.github.io/3dfreedom_project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url ./"
+    "build": "parcel build src/*.html --public-url /3dfreedom_project/"
   },
   "repository": {
     "type": "git",
