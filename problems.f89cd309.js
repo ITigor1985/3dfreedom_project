@@ -1,12 +1,12 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"hRZK":[function(require,module,exports) {
-module.exports="arrow_left.3fde5523.png";
+module.exports="/3dfreedom_project/arrow_left.3fde5523.png";
 },{}],"g5LJ":[function(require,module,exports) {
-module.exports="arrow_right.836cf264.png";
+module.exports="/3dfreedom_project/arrow_right.836cf264.png";
 },{}],"lY0Y":[function(require,module,exports) {
-module.exports="arrow_right.55dca517.png";
+module.exports="/3dfreedom_project/arrow_right.55dca517.png";
 },{}],"KnKz":[function(require,module,exports) {
-module.exports="arrow_left.e21ec6a6.png";
+module.exports="/3dfreedom_project/arrow_left.e21ec6a6.png";
 },{}],"Xp6g":[function(require,module,exports) {
 "use strict";var e=s(require("../images/mobile/problems/arrow_left.png")),r=s(require("../images/mobile/problems/arrow_right.png")),t=s(require("../images/desktop/problems/arrow_right.png")),o=s(require("../images/desktop/problems/arrow_left.png"));function s(e){return e&&e.__esModule?e:{default:e}}$(document).ready(function(){$(".problems-list").slick({slidesToShow:3,infinite:!0,slidesToScroll:3,responsive:[{breakpoint:1440,settings:{arrows:!0,slidesToShow:2,infinite:!0,slidesToScroll:2}},{breakpoint:768,settings:{autoplay:!1,arrows:!0,centerMode:!0,centerPadding:"30px",slidesToShow:1}}]})}),$(document).ready(function(){if(document.body.clientWidth>767){const e=document.querySelector(".slick-prev");e.innerHTML="",e.insertAdjacentHTML("beforeend",`<img src=${o.default} alt="стрелка в лево" class="problems-arrow-left"> `)}else{const r=document.querySelector(".slick-prev");r.innerHTML="",r.insertAdjacentHTML("beforeend",`<img src=${e.default} alt="стрелка в лево" class="problems-arrow-left"> `)}}),$(document).ready(function(){if(document.body.clientWidth>767){const e=document.querySelector(".slick-next");e.innerHTML="",e.insertAdjacentHTML("beforeend",`<img src=${t.default} alt="стрелка в вправо" class="problems-arrow-right"> `)}else{const e=document.querySelector(".slick-next");e.innerHTML="",e.insertAdjacentHTML("beforeend",`<img src=${r.default} alt="стрелка в вправо" class="problems-arrow-right"> `)}});
 },{"../images/mobile/problems/arrow_left.png":"hRZK","../images/mobile/problems/arrow_right.png":"g5LJ","../images/desktop/problems/arrow_right.png":"lY0Y","../images/desktop/problems/arrow_left.png":"KnKz"}]},{},["Xp6g"], null)
-//# sourceMappingURL=problems.f89cd309.js.map
+//# sourceMappingURL=/3dfreedom_project/problems.f89cd309.js.map
