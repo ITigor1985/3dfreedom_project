@@ -56,12 +56,10 @@
     padding: 85px 310px;
     margin: 0px auto;
   }
-  .form-call-back__wrapper {
-    padding: 51px 100px;
-  }
-  .call-back {
-    padding-left: 110px;
-    padding-right: 110px;
+  .form-call-back.container {
+    position: relative;
+    padding: 85px 310px;
+    margin: 0px auto;
     &::after {
       content: '';
       position: absolute;
@@ -72,6 +70,13 @@
       right: 108px;
       bottom: 0;
     }
+  }
+  .form-call-back__wrapper {
+    padding: 51px 100px;
+  }
+  .call-back {
+    padding-left: 110px;
+    padding-right: 110px;
   }
   .form-call-back__title {
     @include font(36px, 42px);

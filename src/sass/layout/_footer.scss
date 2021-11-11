@@ -69,9 +69,9 @@
   justify-content: center;
   margin-bottom: 36px;
 }
-.link-viber {
-  margin-right: 30px;
-}
+// .link-viber {
+//   margin-right: 30px;
+// }
 .footer__soc-item img {
   margin-right: 9px;
 }
@@ -89,6 +89,7 @@
   font-family: Roboto;
   @include font(12px, 19px);
 }
+
 @media screen and (max-width: 374px) {
   .footer__contact {
     flex-wrap: nowrap;
@@ -106,9 +107,7 @@
     justify-content: space-between;
     margin-bottom: 20px;
   }
-  .footer__soc {
-    justify-content: center;
-  }
+
   .footer__contact-title {
     @include font(18px, 24px);
   }
@@ -127,6 +126,12 @@
   .copyright {
     @include font(12px, 16px);
   }
+  .footer__soc-title {
+    text-align: left;
+  }
+  .footer__soc-item img {
+    margin-right: 15px;
+  }
 }
 
 @media screen and(min-width:1440px) {
@@ -137,16 +142,26 @@
     position: relative;
   }
   .footer__soc {
-    justify-content: center;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .footer__soc-title {
+    text-align: left;
+  }
+  .footer__soc-list {
+    display: flex;
+    justify-content: left;
   }
   .copyright {
+    @include font(12px, 16px);
     position: absolute;
     bottom: 100px;
-    right: 130px;
+    right: 117px;
     text-align: left;
   }
 
   .footer__contact-title {
+    text-align-last: left;
     @include font(24px, 32px);
   }
   .footer__schedule-title {
@@ -161,9 +176,7 @@
   .footer__work-schedule-item {
     @include font(18px, 24px);
   }
-  .copyright {
-    @include font(12px, 16px);
-  }
+
   .footer-logo {
     margin-left: 30px;
     margin-right: 110px;
