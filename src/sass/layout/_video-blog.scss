@@ -31,20 +31,20 @@
   .video-blog__title {
     font-size: 48px;
     line-height: 1.4;
-    text-align: left;
+    text-align: center;
     margin-bottom: 100px;
   }
-  .video-blog__title::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    right: 0%;
-    top: 38px;
-    width: 32%;
-    height: 5px;
-    background-color: #ff7d28;
-    border-radius: 2px;
-  }
+  // .video-blog__title::before {
+  //   content: ' ';
+  //   display: block;
+  //   position: absolute;
+  //   right: 0%;
+  //   top: 38px;
+  //   width: 32%;
+  //   height: 5px;
+  //   background-color: #ff7d28;
+  //   border-radius: 2px;
+  // }
   .frame {
     width: 1240px;
     height: 699px;
