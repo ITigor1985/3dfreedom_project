@@ -3,7 +3,7 @@ imgGallery.forEach(image => {
   image.classList.add('lazyload');
   image.setAttribute('data-src', image.src);
   image.removeAttribute('src');
-  console.log(image);
+  
 });
 
 generateScript();
