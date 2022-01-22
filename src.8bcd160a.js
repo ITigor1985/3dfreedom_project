@@ -2,7 +2,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{"./../images/mobile/header/header-bg.jpg":[["header-bg.587aa6cd.jpg","L8Yo"],"L8Yo"],"./../images/tablet/header/tablet-bg.jpg":[["tablet-bg.e2d63f34.jpg","YUVA"],"YUVA"],"./../images/tablet/header/telephone.png":[["telephone.20497149.png","cCFd"],"cCFd"],"./../images/desktop/header/desktop-bg.jpg":[["desktop-bg.d3a8bcc1.jpg","CQo8"],"CQo8"],"./../images/desktop/header/telephone.png":[["telephone.e2859363.png","lBNC"],"lBNC"],"./../images/mobile/service/bg-mobile.jpg":[["bg-mobile.a5826e99.jpg","Z7Vu"],"Z7Vu"],"./../images/tablet/service/bg-tablet.png":[["bg-tablet.901a9561.png","XsG7"],"XsG7"],"./../images/desktop/service/bg-desktop2.jpg":[["bg-desktop2.f73acfb4.jpg","QTbn"],"QTbn"],"./../images/desktop/form-call-back/trub.png":[["trub.bcb20f90.png","nUx1"],"nUx1"]}],"BeZ8":[function(require,module,exports) {
 document.body.onload=function(){setTimeout(function(){const n=document.getElementById("preloader");n.classList.contains("done")||n.classList.add("done")},1e3)};
+},{}],"e86H":[function(require,module,exports) {
+setTimeout(function(e,t,a){var i=e.createElement(a);i.type="text/javascript",i.async=!0,i.src="//widgets.binotel.com/getcall/widgets/pfgeka7vwbniy7gds93i.js";var n=e.getElementsByTagName(a)[0];n.parentNode.insertBefore(i,n)}(document,window,"script"),1e3);
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/preloader");
-},{"./sass/main.scss":"clu1","./js/preloader":"BeZ8"}]},{},["Focm"], null)
-//# sourceMappingURL=src.5fd976a3.js.map
+"use strict";require("./sass/main.scss"),require("./js/preloader"),require("./js/binotel");
+},{"./sass/main.scss":"clu1","./js/preloader":"BeZ8","./js/binotel":"e86H"}]},{},["Focm"], null)
+//# sourceMappingURL=src.8bcd160a.js.map
