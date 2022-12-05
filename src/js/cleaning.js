@@ -1,3 +1,4 @@
+import $ from 'jquery';
 $(document).ready(function () {
   const width = document.body.clientWidth;
   if (width <= 767) {

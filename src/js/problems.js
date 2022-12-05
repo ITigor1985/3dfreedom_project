@@ -2,6 +2,7 @@ import arrow_left from '../images/mobile/problems/arrow_left.png';
 import arrow_right from '../images/mobile/problems/arrow_right.png';
 import arrow_right_desk from '../images/desktop/problems/arrow_right.png';
 import arrow_left_desk from '../images/desktop/problems/arrow_left.png';
+import $ from 'jquery';
 $(document).ready(function () {
   $('.problems-list').slick({
     slidesToShow: 3,
