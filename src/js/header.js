@@ -17,8 +17,16 @@ import $ from 'jquery';
     modal: document.querySelector('[data-modal]'),
   };
 
-  refs.openModalBtn[0].addEventListener('click', toggleModal);
-  refs.openModalBtn[1].addEventListener('click', toggleModal);
+  refs.openModalBtn.forEach(item => item.addEventListener('click', toggleModal));
+
+  // refs.openModalBtn[0].addEventListener('click', toggleModal);
+  // refs.openModalBtn[1].addEventListener('click', toggleModal);
+  // refs.openModalBtn[2].addEventListener('click', toggleModal);
+  // refs.openModalBtn[3].addEventListener('click', toggleModal);
+  // refs.openModalBtn[4].addEventListener('click', toggleModal);
+  // refs.openModalBtn[5].addEventListener('click', toggleModal);
+  // refs.openModalBtn[6].addEventListener('click', toggleModal);
+  // refs.openModalBtn[7].addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {

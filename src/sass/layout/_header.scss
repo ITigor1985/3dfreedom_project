@@ -66,6 +66,7 @@
 }
 .backdrop {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -81,6 +82,7 @@
 .modal-window {
   overflow: visible;
   position: absolute;
+  z-index: 1000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -118,15 +120,17 @@
   cursor: pointer;
   color: #383838;
   font-size: 18px;
-  z-index: 1000;
+  z-index: 4000;
 }
 
 .header-phone_dropdown {
+  position: relative;
   font-family: Roboto;
   font-weight: 500;
   @include font(36px, 42px);
   color: #383838;
   margin-bottom: 22px;
+  z-index: 3000;
 }
 .call-button__item {
   //@include font(36px, 42px);
