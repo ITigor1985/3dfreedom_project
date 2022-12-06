@@ -1,3 +1,4 @@
+import 'slick-carousel/slick/slick.css';
 import './sass/main.scss';
 
 import 'jquery/dist/jquery';

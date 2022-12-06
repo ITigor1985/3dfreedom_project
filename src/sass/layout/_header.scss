@@ -161,6 +161,80 @@
   bottom: 59px;
   right: 45px;
 }
+
+//LANG BUTTON
+
+.header__lang-button {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.lang-button {
+  @include flex-center;
+  background-color: transparent;
+  padding: 5px;
+  font-family: Montserrat;
+  @include font(14px, 18px);
+  letter-spacing: 0.01em;
+  color: #ffaf28;
+  text-transform: uppercase;
+}
+
+.header__lang-button:hover > .lang-button__dropdown,
+.header__lang-button:focus-within > .lang-button__dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lang-button__dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 250ms linear;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  transform: translate(-50%);
+  width: 60px;
+  padding: 16px 0;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -26px;
+    left: 17px;
+    border: 14px solid transparent;
+    border-bottom: 18px solid #ffffff;
+    border-radius: 2px;
+    width: 0;
+    height: 0;
+    z-index: 101;
+  }
+}
+
+.lang-button__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.lang-button__link {
+  font-family: Montserrat;
+  @include font(16px, 20px);
+  letter-spacing: 0.01em;
+  color: #ffaf28;
+  transition: color 250ms linear;
+  text-transform: uppercase;
+}
+
+.lang-button__link:hover,
+.lang-button__link:focus {
+  color: #ffaf28;
+}
+
 @media screen and (max-width: 374px) {
   .img-trybochist {
     position: absolute;
