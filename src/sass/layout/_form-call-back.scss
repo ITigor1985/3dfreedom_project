@@ -30,7 +30,7 @@
 .consultation__form-button {
   width: 100%;
 }
-@media screen and(min-width:768px) {
+@media screen and (min-width: 768px) {
   .form-call-back.container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -50,7 +50,7 @@
     @include font(18px, 21px);
   }
 }
-@media screen and(min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .form-call-back.container {
     position: relative;
     padding: 85px 310px;
