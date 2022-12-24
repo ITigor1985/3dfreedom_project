@@ -85,6 +85,12 @@
   bottom: -30px;
   background: none;
   border: none;
+  width: 43px;
+  height: 16px;
+  background-image: url(../images/mobile/problems/arrow_left.png);
+  background-size: cover;
+  font-size: 0;
+  cursor: pointer;
 }
 .slick-next.slick-arrow {
   position: absolute;
@@ -93,6 +99,12 @@
   bottom: -30px;
   background: none;
   border: none;
+  width: 43px;
+  height: 16px;
+  background-image: url(../images/mobile/problems/arrow_right.png);
+  background-size: cover;
+  font-size: 0;
+  cursor: pointer;
 }
 @media screen and (max-width: 374px) {
   .margin-bottom2 {
@@ -121,10 +133,16 @@
   .slick-prev.slick-arrow {
     left: 70px;
     bottom: -50px;
+    width: 70px;
+    height: 24px;
+    background-image: url(../images/desktop/problems/arrow_left.png);
   }
   .slick-next.slick-arrow {
     right: 70px;
     bottom: -50px;
+    width: 70px;
+    height: 24px;
+    background-image: url(../images/desktop/problems/arrow_right.png);
   }
   .slick-track {
     display: flex;
@@ -189,9 +207,15 @@
   .slick-prev.slick-arrow {
     left: 110px;
     bottom: -70px;
+    width: 82px;
+    height: 26px;
+    background-image: url(../images/desktop/problems/arrow_left.png);
   }
   .slick-next.slick-arrow {
     right: 110px;
     bottom: -70px;
+    width: 82px;
+    height: 26px;
+    background-image: url(../images/desktop/problems/arrow_right.png);
   }
 }
