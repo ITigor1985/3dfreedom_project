@@ -29,6 +29,17 @@
   position: fixed;
   bottom: 60px;
   right: 30px;
+  animation: shadow 3s ease infinite;
+  border-radius: 50%;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 175, 40, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 175, 40, 0);
+  }
 }
 
 .header-middle {
