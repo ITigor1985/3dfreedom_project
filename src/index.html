@@ -74,7 +74,17 @@
     </main>
     <include src="./partials/ru/footer.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-
+    <button type="button" class="call hero__button position_flex" data-modal-open>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="images/desktop/header/icon_phone-desktop.png 1x"
+        />
+        <source media="(min-width: 768px)" srcset="images/tablet/header/icon_phone-tablet.png 1x" />
+        <source media="(max-width: 767px)" srcset="images/mobile/header/icon_phone.png 1x" />
+        <img class="phone" loading="lazy" src="#" alt="contact phone" />
+      </picture>
+    </button>
     <script src="./index.js"></script>
   </body>
 </html>
