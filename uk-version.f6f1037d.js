@@ -32,4 +32,4 @@ const e=document.querySelectorAll("img");function s(){const e=document.createEle
 },{"jquery":"juYr"}],"wwHk":[function(require,module,exports) {
 "use strict";require("slick-carousel/slick/slick.css"),require("modern-normalize/modern-normalize.css"),require("./sass/main.scss"),require("jquery/dist/jquery"),require("slick-carousel/slick/slick.min.js"),require("./js/lazyimg.js"),require("./js/header-uk.js"),require("./js/problems.js"),require("./js/cleaning.js"),require("./js/before_after.js"),require("./js/reviews.js"),require("./js/instruments.js");
 },{"slick-carousel/slick/slick.css":"LG95","modern-normalize/modern-normalize.css":"Y5dV","./sass/main.scss":"clu1","jquery/dist/jquery":"juYr","slick-carousel/slick/slick.min.js":"YK3c","./js/lazyimg.js":"Ob1G","./js/header-uk.js":"pKfv","./js/problems.js":"Xp6g","./js/cleaning.js":"oCJF","./js/before_after.js":"gJZ1","./js/reviews.js":"C1JV","./js/instruments.js":"JwQZ"}]},{},["wwHk"], null)
-//# sourceMappingURL=uk-version.3b266bc7.js.map
+//# sourceMappingURL=uk-version.f6f1037d.js.map
