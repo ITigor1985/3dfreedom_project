@@ -34,4 +34,4 @@ const e=document.querySelectorAll("img");function s(){const e=document.createEle
 },{"jquery":"juYr"}],"Focm":[function(require,module,exports) {
 "use strict";require("slick-carousel/slick/slick.css"),require("modern-normalize/modern-normalize.css"),require("./sass/main.scss"),require("jquery/dist/jquery"),require("slick-carousel/slick/slick.min.js"),require("./js/preloader"),require("./js/lazyimg.js"),require("./js/header.js"),require("./js/problems.js"),require("./js/cleaning.js"),require("./js/before_after.js"),require("./js/reviews.js"),require("./js/instruments.js");
 },{"slick-carousel/slick/slick.css":"BeZ8","modern-normalize/modern-normalize.css":"BeZ8","./sass/main.scss":"clu1","jquery/dist/jquery":"juYr","slick-carousel/slick/slick.min.js":"YK3c","./js/preloader":"BeZ8","./js/lazyimg.js":"Ob1G","./js/header.js":"cGsR","./js/problems.js":"Xp6g","./js/cleaning.js":"oCJF","./js/before_after.js":"gJZ1","./js/reviews.js":"C1JV","./js/instruments.js":"JwQZ"}]},{},["Focm"], null)
-//# sourceMappingURL=src.95732fe8.js.map
+//# sourceMappingURL=src.a80800d0.js.map
