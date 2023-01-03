@@ -6,7 +6,6 @@ import 'jquery/dist/jquery';
 import 'slick-carousel/slick/slick.min.js';
 import './js/preloader';
 import './js/lazyimg.js';
-//import './js/binotel';
 
 import './js/header.js';
 import './js/problems.js';
