@@ -6,10 +6,290 @@
   color: #ff7d28;
   margin-bottom: 50px;
 }
-.frame {
+
+.video.video4 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/video4.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/video4.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video4 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/video4.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+.video.video1 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/foto1.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/foto1.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video1 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/foto1.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+
+.video.video2 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/foto3.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/foto3.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video2 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/foto3.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+
+.video.video3 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/foto2.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/foto2.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video3 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/foto2.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+
+.video.video5 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/foto1-uk.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/foto1-uk.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video5 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/foto1-uk.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+.video.video6 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/foto2-uk.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/foto2-uk.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video6 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/foto2-uk.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+
+.video.video7 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/foto3-uk.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/foto3-uk.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video7 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/foto3-uk.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+
+.video.video8 {
+  display: block;
+  position: relative;
+  max-width: 425px;
+  height: 100%;
+  min-height: 200px;
+  max-height: 240px;
+  background: url('../images/desktop/video-blog/play.png') no-repeat center,
+    url('../images/desktop/video-blog/video4-uk.jpg') no-repeat center;
+
+  background-size: 20%, cover;
+}
+
+@supports (
+  (background: url('../images/desktop/video-blog/video4-uk.webp')) and
+    (background: url('../images/desktop/video-blog/play.webp'))
+) {
+  .video.video8 {
+    display: block;
+    position: relative;
+    max-width: 425px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
+      url('../images/desktop/video-blog/video4-uk.webp') no-repeat center;
+    background-size: 20%, cover;
+  }
+}
+
+iframe {
   width: 100%;
-  height: 188px;
-  margin: 0 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.video-blog .slick-list {
+  overflow: hidden;
+}
+.video-blog .slick-track {
+  display: flex;
+  align-items: self-end;
+  margin-bottom: 40px;
+}
+.video-blog .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+}
+.video-blog .slick-dots button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+}
+.video-blog .slick-dots li {
+  margin-right: 10px;
+}
+.video-blog .slick-dots li:last-child {
+  margin-right: 0;
+}
+.video-blog .slick-dots li.slick-active button {
+  background: radial-gradient(44.05% 44.05% at 50% 50%, #ffe790 0%, #ffaf28 100%);
+}
+.video-blog .slick-dots li button {
+  background: #c4c4c4;
+}
+ul.slick-dots {
+  padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -18,10 +298,28 @@
     line-height: 1.39;
     text-align: center;
   }
-  .frame {
-    width: 618px;
-    height: 346px;
-    margin-left: 0;
+  .video-blog__list {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .video.video1,
+  .video.video2,
+  .video.video3,
+  .video.video4,
+  .video.video5,
+  .video.video6,
+  .video.video7,
+  .video.video8 {
+    max-width: 301.5px;
+    height: 169.6px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -34,6 +332,29 @@
     text-align: center;
     margin-bottom: 100px;
   }
+  .video-blog__list {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .video.video1,
+  .video.video2,
+  .video.video3,
+  .video.video4,
+  .video.video5,
+  .video.video6,
+  .video.video7,
+  .video.video8 {
+    max-width: 610px;
+    min-height: 343px;
+  }
   // .video-blog__title::before {
   //   content: ' ';
   //   display: block;
@@ -45,9 +366,4 @@
   //   background-color: #ff7d28;
   //   border-radius: 2px;
   // }
-  .frame {
-    width: 1240px;
-    height: 699px;
-    margin: 0 25px;
-  }
 }
