@@ -1,0 +1,22 @@
+.h2-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  color: #ff7d28;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      font-size: 36px;
+      margin-bottom: 60px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    & {
+      font-size: 48px;
+      line-height: 1.39;
+      margin-bottom: 0px;
+    }
+  }
+}

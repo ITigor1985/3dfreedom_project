@@ -83,6 +83,8 @@
     padding-bottom: 50px;
   }
   .price__title {
+    display: block;
+    position: relative;
     @include font(48px, 67px);
     margin-bottom: 102px;
     &::after {

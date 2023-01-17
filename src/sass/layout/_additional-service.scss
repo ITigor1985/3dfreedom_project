@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .additional-service__list-item {
@@ -103,6 +103,17 @@
     background-color: #ff7d28;
     border-radius: 2px;
   }
+  .additional-service__title.ua::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0%;
+    top: 85px;
+    width: 910px;
+    height: 5px;
+    background-color: #ff7d28;
+    border-radius: 2px;
+  }
   .additional-service.container {
     position: relative;
     padding-top: 50px;
@@ -132,5 +143,8 @@
   }
   .additional-service__list-item {
     margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 }
