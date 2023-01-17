@@ -10,6 +10,7 @@ import './js/lazyimg.js';
 
 import './js/header-uk.js';
 import './js/video-blog.js';
+import './js/article.js';
 import './js/problems.js';
 import './js/cleaning.js';
 import './js/before_after.js';
