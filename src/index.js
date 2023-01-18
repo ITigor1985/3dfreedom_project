@@ -6,6 +6,8 @@ import 'jquery/dist/jquery';
 import 'slick-carousel/slick/slick.min.js';
 import './js/preloader';
 import './js/lazyimg.js';
+import './js/smoothScroll.js';
+import './js/consultation-form.js';
 
 import './js/header.js';
 import './js/video-blog.js';

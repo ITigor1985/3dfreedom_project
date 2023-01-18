@@ -19,17 +19,45 @@ import $ from 'jquery';
 
   refs.openModalBtn.forEach(item => item.addEventListener('click', toggleModal));
 
-  // refs.openModalBtn[0].addEventListener('click', toggleModal);
-  // refs.openModalBtn[1].addEventListener('click', toggleModal);
-  // refs.openModalBtn[2].addEventListener('click', toggleModal);
-  // refs.openModalBtn[3].addEventListener('click', toggleModal);
-  // refs.openModalBtn[4].addEventListener('click', toggleModal);
-  // refs.openModalBtn[5].addEventListener('click', toggleModal);
-  // refs.openModalBtn[6].addEventListener('click', toggleModal);
-  // refs.openModalBtn[7].addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
+})();
+
+(() => {
+  const refs = {
+    header: document.querySelector('.header-top'),
+  };
+
+  function toggleClassHeader(counterScrollMove, pixels) {
+    if (counterScrollMove >= pixels) {
+      refs.header.classList.add('opacity');
+    } else {
+      refs.header.classList.remove('opacity');
+    }
+    window.removeEventListener('resize', handleResize);
+    window.removeEventListener('scroll', handleResize);
+  }
+
+  function handleResize() {
+    const { innerWidth: width } = window;
+    if (width < 1440) {
+      return window.addEventListener('scroll', () => {
+        let counterScrollMove = pageYOffset;
+        let pixels = 86;
+        toggleClassHeader(counterScrollMove, pixels);
+      });
+    } else {
+      return window.addEventListener('scroll', () => {
+        let counterScrollMove = pageYOffset;
+        let pixels = 111;
+        toggleClassHeader(counterScrollMove, pixels);
+      });
+    }
+  }
+
+  window.addEventListener('resize', handleResize) ||
+    window.addEventListener('scroll', handleResize);
 })();

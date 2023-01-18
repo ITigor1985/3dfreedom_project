@@ -1,15 +1,36 @@
 .header.section {
-  padding-top: 0;
+  position: relative;
+  padding-top: 86px;
   padding-bottom: 0;
 }
 .header-top {
+  display: flex;
+  justify-content: center;
+  position: fixed;
   background: #383838;
   height: 86px;
+  width: 100vw;
+  top: 0;
+  z-index: 10000;
+  &.opacity {
+    opacity: 0.6;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+// .header-top.opacity {
+//   position: fixed;
+//   opacity: 0.6;
+//   top: 0;
+//   left: 0;
+//   z-index: 100;
+// }
+
 .header-top.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 .header-menu {
   display: none;
@@ -25,6 +46,7 @@
   border: none;
   padding-left: 0px;
   padding-right: 0px;
+  cursor: pointer;
 }
 .call.hero__button.position_flex {
   position: fixed;
@@ -265,8 +287,15 @@
 
 @media screen and (min-width: 768px) {
   .header-top {
-    justify-content: space-around;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
   }
+  .header-top.container {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
   .header-price {
     display: none;
   }
@@ -336,8 +365,12 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .header.section {
+    padding-top: 111px;
+  }
   .header-top {
     height: 111px;
+    justify-content: center;
   }
   .header-middle {
     padding-top: 200px;
@@ -346,9 +379,7 @@
 
     background: no-repeat url('../images/desktop/header/desktop-bg.jpg');
   }
-  .header-top {
-    justify-content: space-between;
-  }
+
   .header-link {
     margin-right: 140px;
     font-size: 24px;

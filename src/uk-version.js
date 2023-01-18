@@ -7,8 +7,10 @@ import 'slick-carousel/slick/slick.min.js';
 // import './js/preloader';
 import './js/lazyimg.js';
 //import './js/binotel';
+import './js/smoothScroll.js';
+import './js/consultation-form.js';
 
-import './js/header-uk.js';
+import './js/header.js';
 import './js/video-blog.js';
 import './js/article.js';
 import './js/problems.js';
