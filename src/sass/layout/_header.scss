@@ -65,10 +65,12 @@
 }
 
 .header-middle {
-  padding-top: 435px;
-  background: no-repeat url('../images/mobile/header/header-bg.jpg');
+  padding-top: 300px;
+  background: no-repeat url('../images/mobile/header/chistka-dimoxoda.jpg');
+  background-attachment: fixed;
   background-size: cover;
-  height: 700px;
+  height: 650px;
+  
 }
 
 .wrapper {
@@ -81,7 +83,7 @@
   font-size: 24px;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #383838;
+  color: #ffffff;
 }
 
 .header-middle-list {
@@ -89,7 +91,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42;
-  color: #383838;
+  color: #ffffff;
   margin-bottom: 35px;
 }
 .button {
@@ -311,11 +313,10 @@
     color: #ffffff;
   }
   .header-middle {
-    padding-top: 447px;
-    padding-right: 300px;
-    padding-left: 50px;
-    background: no-repeat url('../images/tablet/header/tablet-bg.jpg');
-    height: 870px;
+    padding-top: 100px;
+    background: no-repeat url('../images/tablet/header/chistka-dimoxoda.jpg');
+    background-attachment: fixed;
+    height: 600px;
   }
   .header-middle-title {
     font-size: 36px;
@@ -375,13 +376,17 @@
   .header-top.container {
     height: 110px;
   }
-  .header-middle {
-    padding-top: 200px;
-    padding-right: 600px;
-    padding-left: 100px;
-
+  .header-middle {    
+    padding-top: 120px;
+    padding-right: 0px;
+    padding-left: 0px;
     background: no-repeat url('../images/desktop/header/desktop-bg.jpg');
+    background-attachment: fixed;
+    
+    background-size: cover;
+    height: 800px;
   }
+  
 
   .header-link {
     margin-right: 140px;
@@ -389,12 +394,14 @@
     line-height: 1.21;
   }
   .header-middle-title {
+    color: #ffffff;
     font-size: 64px;
     margin-bottom: 50px;
-    padding-right: 600px;
+    padding-right: 500px;
   }
   .header-middle-list {
     margin-bottom: 70px;
+    color:#ffffff
   }
   .button {
     border: none;
