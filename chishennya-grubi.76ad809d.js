@@ -124,4 +124,4 @@ document.querySelectorAll(".chapter").forEach(e=>{e.addEventListener("click",fun
 },{}],"DV7k":[function(require,module,exports) {
 "use strict";require("modern-normalize/modern-normalize.css"),require("./sass/main.scss"),require("./js/lazyimg.js"),require("./js/smoothScroll.js"),require("./js/header.js"),require("./js/consultation-form.js"),require("./js/article.js");
 },{"modern-normalize/modern-normalize.css":"Y5dV","./sass/main.scss":"clu1","./js/lazyimg.js":"Ob1G","./js/smoothScroll.js":"GQ5z","./js/header.js":"cGsR","./js/consultation-form.js":"q5tE","./js/article.js":"p45Z"}]},{},["DV7k"], null)
-//# sourceMappingURL=chishennya-grubi.c4b45676.js.map
+//# sourceMappingURL=chishennya-grubi.76ad809d.js.map
