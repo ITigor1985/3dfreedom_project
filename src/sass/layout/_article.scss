@@ -35,6 +35,27 @@
     }
   }
 }
+
+.article__title.gruba {
+  
+  @media screen and (min-width: 1440px) {
+    
+    &::before {
+      content: '';      
+      width: 870px;
+    }
+  }
+}
+.article__title.gruba_ru {
+  
+  @media screen and (min-width: 1440px) {
+    
+    &::before {
+      content: '';      
+      width: 920px;
+    }
+  }
+}
 .article__description ul li{
   font-family: 'Montserrat';
   font-size: 13px;
