@@ -121,7 +121,7 @@ var e=require("buffer").Buffer;Object.defineProperty(exports,"__esModule",{value
 "use strict";var e=t(require("axios"));function t(e){return e&&e.__esModule?e:{default:e}}const n="5916397565:AAHaSeLRFKxqv4eV5RpJiV_8EtVr8AB3Dns",s="-1001671673110",a=`https://api.telegram.org/bot${n}/sendMessage`,l=document.getElementById("success");document.getElementById("consultation__form").addEventListener("submit",function(t){t.preventDefault();let n="<b>Заявка с сайта!</b>\n";function o(){l.style.display="none"}n+=`<b>Отправитель: </b> ${this.username.value}\n`,n+=`<b>Телефон: </b> ${this.telephon.value}`,e.default.post(a,{chat_id:s,parse_mode:"html",text:n}).then(e=>{this.username.value="",this.telephon.value="",l.style.display="block",setTimeout(o,1e4)}).catch(e=>{console.warn(e)})});
 },{"axios":"dZBD"}],"p45Z":[function(require,module,exports) {
 document.querySelectorAll(".chapter").forEach(e=>{e.addEventListener("click",function(){e.classList.toggle("active")})});
-},{}],"IZRv":[function(require,module,exports) {
+},{}],"q7jD":[function(require,module,exports) {
 "use strict";require("modern-normalize/modern-normalize.css"),require("./sass/main.scss"),require("./js/lazyimg.js"),require("./js/smoothScroll.js"),require("./js/header.js"),require("./js/consultation-form.js"),require("./js/article.js");
-},{"modern-normalize/modern-normalize.css":"Y5dV","./sass/main.scss":"clu1","./js/lazyimg.js":"Ob1G","./js/smoothScroll.js":"GQ5z","./js/header.js":"cGsR","./js/consultation-form.js":"q5tE","./js/article.js":"p45Z"}]},{},["IZRv"], null)
-//# sourceMappingURL=chistka-pechi.1c001735.js.map
+},{"modern-normalize/modern-normalize.css":"Y5dV","./sass/main.scss":"clu1","./js/lazyimg.js":"Ob1G","./js/smoothScroll.js":"GQ5z","./js/header.js":"cGsR","./js/consultation-form.js":"q5tE","./js/article.js":"p45Z"}]},{},["q7jD"], null)
+//# sourceMappingURL=chistka-grubi.980fcccb.js.map
