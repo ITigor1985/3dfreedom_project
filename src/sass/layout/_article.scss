@@ -76,6 +76,26 @@
     }
   }
 }
+.article__title.kamin {
+  
+  @media screen and (min-width: 1440px) {
+    
+    &::before {
+      content: '';      
+      width: 880px;
+    }
+  }
+}
+.article__title.kamin-uk {
+  
+  @media screen and (min-width: 1440px) {
+    
+    &::before {
+      content: '';      
+      width: 850px;
+    }
+  }
+}
 .article__description ul li{
   font-family: 'Montserrat';
   font-size: 13px;
