@@ -1,6 +1,6 @@
 import 'slick-carousel/slick/slick.css';
-import 'modern-normalize/modern-normalize.css';
 import './sass/main.scss';
+import 'modern-normalize/modern-normalize.css';
 
 import 'jquery/dist/jquery';
 import 'slick-carousel/slick/slick.min.js';

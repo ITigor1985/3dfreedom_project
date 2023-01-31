@@ -37,66 +37,54 @@
 }
 
 .article__title.gruba {
-  
   @media screen and (min-width: 1440px) {
-    
     &::before {
-      content: '';      
+      content: '';
       width: 870px;
     }
   }
 }
 .article__title.gruba_ru {
-  
   @media screen and (min-width: 1440px) {
-    
     &::before {
-      content: '';      
+      content: '';
       width: 920px;
     }
   }
 }
 .article__title.pechi_ru {
-  
   @media screen and (min-width: 1440px) {
-    
     &::before {
-      content: '';      
+      content: '';
       width: 540px;
     }
   }
 }
 .article__title.pechi_ua {
-  
   @media screen and (min-width: 1440px) {
-    
     &::before {
-      content: '';      
+      content: '';
       width: 600px;
     }
   }
 }
 .article__title.kamin {
-  
   @media screen and (min-width: 1440px) {
-    
     &::before {
-      content: '';      
+      content: '';
       width: 880px;
     }
   }
 }
 .article__title.kamin-uk {
-  
   @media screen and (min-width: 1440px) {
-    
     &::before {
-      content: '';      
+      content: '';
       width: 850px;
     }
   }
 }
-.article__description ul li{
+.article__description ul li {
   font-family: 'Montserrat';
   font-size: 13px;
   line-height: 20px;
@@ -160,7 +148,7 @@
 .chapter__title {
   font-family: 'Montserrat';
   max-width: 350px;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #ff7d28;
