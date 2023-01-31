@@ -1,4 +1,4 @@
-import axios from 'axios';
+//import axios from 'axios';
 
 const TOKEN = '5916397565:AAHaSeLRFKxqv4eV5RpJiV_8EtVr8AB3Dns';
 const CHAT_ID = '-1001671673110';
@@ -16,13 +16,21 @@ document.getElementById('consultation__form').addEventListener('submit', functio
     success.style.display = 'none';
   }
 
-  axios
-    .post(URI_API, {
-      chat_id: CHAT_ID,
-      parse_mode: 'html',
-      text: message,
-    })
-    .then(res => {
+  const newPost = {
+    chat_id: CHAT_ID,
+    parse_mode: 'html',
+    text: message,
+  };
+
+  fetch(URI_API, {
+    method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
+    body: JSON.stringify(newPost), // Тело запроса в JSON-формате
+    headers: {
+      // Добавляем необходимые заголовки
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then(response => {
       this.username.value = '';
       this.telephon.value = '';
       success.style.display = 'block';
@@ -31,4 +39,20 @@ document.getElementById('consultation__form').addEventListener('submit', functio
     .catch(err => {
       console.warn(err);
     });
+
+  // axios
+  //   .post(URI_API, {
+  //     chat_id: CHAT_ID,
+  //     parse_mode: 'html',
+  //     text: message,
+  //   })
+  //   .then(res => {
+  //     this.username.value = '';
+  //     this.telephon.value = '';
+  //     success.style.display = 'block';
+  //     setTimeout(displayNone, 10000);
+  //   })
+  //   .catch(err => {
+  //     console.warn(err);
+  //   });
 });

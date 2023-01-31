@@ -70,7 +70,13 @@
   // background-attachment: fixed;
   background-size: cover;
   height: 650px;
-  
+}
+.header-middle.kamin {
+  padding-top: 300px;
+  background: no-repeat url('../images/mobile/header/kamin.jpg');
+  // background-attachment: fixed;
+  background-size: cover;
+  height: 650px;
 }
 
 .wrapper {
@@ -318,6 +324,12 @@
     background-attachment: fixed;
     height: 500px;
   }
+  .header-middle.kamin {
+    padding-top: 150px;
+    background: no-repeat url('../images/tablet/header/kamin.jpg');
+    background-attachment: fixed;
+    height: 500px;
+  }
   .header-middle-title {
     font-size: 36px;
     line-height: 1.22;
@@ -376,17 +388,26 @@
   .header-top.container {
     height: 110px;
   }
-  .header-middle {    
+  .header-middle {
     padding-top: 230px;
     padding-right: 0px;
     padding-left: 0px;
     background: no-repeat url('../images/desktop/header/desktop-bg.jpg');
     background-attachment: fixed;
-    
+
     background-size: cover;
     height: 800px;
   }
-  
+  .header-middle.kamin {
+    padding-top: 230px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background: no-repeat url('../images/desktop/header/kamin.jpg');
+    background-attachment: fixed;
+
+    background-size: cover;
+    height: 800px;
+  }
 
   .header-link {
     margin-right: 140px;
@@ -401,7 +422,7 @@
   }
   .header-middle-list {
     margin-bottom: 70px;
-    color:#ffffff
+    color: #ffffff;
   }
   .button {
     border: none;
