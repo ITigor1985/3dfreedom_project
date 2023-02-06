@@ -25,7 +25,6 @@
 }
 
 .contacts__contact-list {
-  margin-right: 35px;
   @media screen and(min-width: 768px) {
     margin-right: 100px;
   }
@@ -38,15 +37,25 @@
   display: flex;
   align-items: center;
   margin-bottom: 4px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media screen and(min-width: 768px) {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
   @media screen and(min-width: 1440px) {
     margin-bottom: 24px;
   }
 }
 
-.contacts__contact-item .phone {
+.contacts__work-schedule {
+  margin-left: auto;
+}
+
+.contacts__contact-item .phone,
+.contacts__contact-item .adress,
+.contacts__contact-item .clock,
+.contacts__contact-item .mail {
   margin-right: 10px;
   width: 25px;
   height: 25px;
@@ -67,6 +76,38 @@
   font-weight: 500;
   @include font(14px, 14px);
   color: #383838;
+  @media screen and(min-width: 768px) {
+    @include font(24px, 24px);
+  }
+  @media screen and(min-width: 1440px) {
+    @include font(18px, 18px);
+  }
+  @media screen and(max-width: 374px) {
+    @include font(12px, 12px);
+  }
+}
+
+.contacts__work-schedule .contacts__contact-item {
+  margin-bottom: 14px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and(min-width: 1440px) {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__adress-description,
+.contacts__work-time-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  @include font(14px, 14px);
+  color: #383838;
+  @media screen and(max-width: 374px) {
+    @include font(12px, 12px);
+  }
   @media screen and(min-width: 768px) {
     @include font(24px, 24px);
   }
