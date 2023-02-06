@@ -39,20 +39,4 @@ document.getElementById('consultation__form').addEventListener('submit', functio
     .catch(err => {
       console.warn(err);
     });
-
-  // axios
-  //   .post(URI_API, {
-  //     chat_id: CHAT_ID,
-  //     parse_mode: 'html',
-  //     text: message,
-  //   })
-  //   .then(res => {
-  //     this.username.value = '';
-  //     this.telephon.value = '';
-  //     success.style.display = 'block';
-  //     setTimeout(displayNone, 10000);
-  //   })
-  //   .catch(err => {
-  //     console.warn(err);
-  //   });
 });

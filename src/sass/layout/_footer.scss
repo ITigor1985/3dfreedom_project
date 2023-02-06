@@ -13,7 +13,8 @@
   justify-content: space-around;
 }
 .footer__contact-item {
-  display: flex;
+  display: inline-flex;
+  margin-right: 20px;
   align-items: center;
   margin-bottom: 9px;
   font-family: Roboto;
@@ -27,8 +28,18 @@
   @include font(12px, 16px);
 }
 .footer__contact {
-  margin-right: 58px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+.footer__contact.list {
+  flex-wrap: wrap;
+}
+
 .footer__contact-item img {
   margin-right: 5px;
 }
@@ -39,6 +50,7 @@
   font-family: Roboto;
   font-weight: 700;
   @include font(14px, 19px);
+  text-align: center;
   color: #ff7d28;
   margin-bottom: 14px;
 }
@@ -98,13 +110,25 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer__contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__contacts {
+    width: 250px;
+    margin-right: 25px;
+  }
   .footer-container.container {
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
   }
   .footer__all-contacts {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
   }
 
@@ -125,12 +149,22 @@
   }
   .copyright {
     @include font(12px, 16px);
+    text-align: center;
+    margin: 0 auto;
   }
   .footer__soc-title {
-    text-align: left;
+    text-align: center;
   }
   .footer__soc-item img {
     margin-right: 15px;
+  }
+  .footer__soc-item:last-child img {
+    margin-right: 0;
+  }
+  .footer__soc-list {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0;
   }
 }
 
@@ -140,28 +174,33 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+    justify-content: space-between;
+  }
+  .footer__all-contacts {
+    margin-bottom: 0;
+  }
+  .footer__contact-item {
+    margin-bottom: 0;
   }
   .footer__soc {
-    justify-content: start;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .footer__soc-title {
     text-align: left;
   }
-  .footer__soc-list {
-    display: flex;
-    justify-content: left;
-  }
+
   .copyright {
     @include font(12px, 16px);
-    position: absolute;
-    bottom: 100px;
-    right: 117px;
-    text-align: left;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
   }
 
   .footer__contact-title {
-    text-align-last: left;
+    text-align-last: center;
     @include font(24px, 32px);
   }
   .footer__schedule-title {
@@ -178,16 +217,17 @@
   }
 
   .footer-logo {
-    margin-left: 30px;
-    margin-right: 110px;
+    margin-bottom: 0;
   }
-  .footer__contacts {
-    margin-right: 110px;
+  .footer__contacts_wrapper {
+    align-items: center;
+    margin-right: 175px;
   }
   .footer__work-schedule {
     margin-right: 70px;
   }
-  .perenos {
-    display: block;
+  .footer__contacts {
+    width: 100%;
+    margin-right: 0px;
   }
 }
