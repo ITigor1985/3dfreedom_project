@@ -1,0 +1,76 @@
+.contacts__contact-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  @include font(24px, 34px);
+  color: #ff7d28;
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and(min-width: 768px) {
+    @include font(44px, 62px);
+    margin-bottom: 50px;
+  }
+  @media screen and(min-width: 1440px) {
+    @include font(64px, 64px);
+  }
+}
+.contacts__all-contacts__map-wrapper {
+}
+
+.contacts__all-contacts-wrapper {
+}
+
+.contacts__wrapper {
+  display: flex;
+}
+
+.contacts__contact-list {
+  margin-right: 35px;
+  @media screen and(min-width: 768px) {
+    margin-right: 100px;
+  }
+  @media screen and(min-width: 1440px) {
+    margin-right: 49px;
+  }
+}
+
+.contacts__contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 8px;
+  }
+  @media screen and(min-width: 1440px) {
+    margin-bottom: 24px;
+  }
+}
+
+.contacts__contact-item .phone {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  @media screen and(min-width: 768px) {
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and(min-width: 1440px) {
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.contacts__contact-link {
+  font-family: 'Roboto';
+  font-weight: 500;
+  @include font(14px, 14px);
+  color: #383838;
+  @media screen and(min-width: 768px) {
+    @include font(24px, 24px);
+  }
+  @media screen and(min-width: 1440px) {
+    @include font(18px, 18px);
+  }
+}
