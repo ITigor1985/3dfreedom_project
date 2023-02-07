@@ -1,3 +1,8 @@
+.contacts.section {
+  @media screen and(min-width:1440px) {
+    padding-top: 50px;
+  }
+}
 .contacts__contact-title {
   font-family: 'Montserrat';
   font-style: normal;
@@ -15,9 +20,17 @@
   }
 }
 .contacts__all-contacts__map-wrapper {
+  @media screen and(min-width:1440px) {
+    display: flex;
+  }
 }
 
 .contacts__all-contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1440px) {
+    min-width: 435px;
+  }
 }
 
 .contacts__wrapper {
@@ -44,6 +57,7 @@
     margin-bottom: 16px;
   }
   @media screen and(min-width: 1440px) {
+    width: 100%;
     margin-bottom: 24px;
   }
 }
@@ -80,6 +94,7 @@
     @include font(24px, 24px);
   }
   @media screen and(min-width: 1440px) {
+    display: block;
     @include font(18px, 18px);
   }
   @media screen and(max-width: 374px) {
@@ -113,5 +128,69 @@
   }
   @media screen and(min-width: 1440px) {
     @include font(18px, 18px);
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  @media screen and(min-width: 1440px) {
+    width: 715px;
+    height: 541px;
+    margin-left: auto;
+  }
+}
+
+.contacts__map-img {
+  width: 100%;
+}
+.contacts .consultation .container {
+  @media screen and(min-width: 1440px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.contacts .consultation .consultation__title {
+  @media screen and(min-width: 1440px) {
+    @include font(26px, 32px);
+  }
+}
+
+.contacts .consultation .consultation__form {
+  @media screen and(max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media screen and(min-width: 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media screen and(min-width: 1440px) {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.contacts .consultation.section {
+  @media screen and(min-width: 768px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.contacts .consultation .modal-form__input {
+  @media screen and(min-width: 1440px) {
+    width: 100%;
+    height: 52px;
+    margin-bottom: 25px;
+  }
+}
+
+.contacts .consultation .consultation__form-button {
+  @media screen and(min-width: 1440px) {
+    height: 52px;
+    margin-bottom: 25px;
   }
 }
