@@ -6,6 +6,7 @@ function ready() {
   const ref = {
     list: document.querySelector('.products__list'),
   };
+  ref.butt.addEventListener('click', e => console.log(e));
 
   let fragment = document.createDocumentFragment();
 

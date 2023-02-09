@@ -1,0 +1,106 @@
+.movies.section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.list-card__title {
+  text-transform: uppercase;
+  @include font(12px, 500, 16px);
+}
+.list-card__text {
+  @include font(12px, 500, 16px);
+  color: var(--brand-orange-color);
+}
+.list-card__rating {
+  @include font(12px, 500, 14px);
+  background-color: var(--brand-orange-color);
+  color: var(--primary-white-color);
+  padding: 1px 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+.list-card {
+  // margin-top: -20px;
+  & > :first-child {
+    margin-top: 0;
+  }
+}
+
+.list-card__item {
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
+}
+.list-card__link {
+  display: block;
+  border-radius: 0 0 10px 10px;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.list-card__image-wrapper img {
+  width: 280px;
+  height: 398px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .movies.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .list-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+  .list-card__item {
+    .list-card > & {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  .list-card__image-wrapper img {
+    width: 294px;
+    height: 398px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .list-card__item {
+    .list-card > & {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  .list-card__image-wrapper img {
+    width: 274px;
+    height: 398px;
+  }
+}
+
+.list-card__content {
+  padding: 10px 0 10px 4px;
+  border-radius: 0 0 10px 10px;
+  @include min-width('medium') {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 68px;
+  }
+  // background-color: #fff;
+}
