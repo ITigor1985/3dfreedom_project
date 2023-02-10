@@ -25,12 +25,12 @@ fragment = newProducts.map(item => {
     
       </div>
       <div class="list-card__content">
-        <h2 class="list-card__title">
+        <h3 class="list-card__title">
           ${item.name}
-        </h2>
+        </h3>
         <div class="list-card__pay">
           <p class="list-card__text">${item.price}</p>
-          <button type="button">Купить</button>
+          <button class="button" type="button">Купить</button>
         </div>
       </div>
     </div>

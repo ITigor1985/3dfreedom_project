@@ -1,17 +1,49 @@
 .products {
   padding-top: 20px;
   padding-bottom: 40px;
+  background-image: url('../images/fon.jpg');
+}
+.products__title {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  @include font(18px, 25px);
+  text-align: center;
+  color: #ff7d28;
+  margin-bottom: 40px;
+  @media screen and(min-width:768px) {
+    @include font(36px, 50px);
+  }
+  @media screen and(min-width:1440px) {
+    @include font(48px, 67px);
+    text-align: right;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0%;
+      top: 35px;
+      width: 400px;
+      height: 5px;
+      background-color: #ff7d28;
+      border-radius: 2px;
+    }
+  }
 }
 .list-card__title {
+  font-family: 'Montserrat';
   font-weight: 500;
-  @include font(12px, 17px);
-
+  @include font(14px, 17px);
   margin-bottom: 16px;
+  text-align: center;
 }
 .list-card__text {
-  font-weight: 500;
-  @include font(12px, 17px);
-  color: black;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  @include font(18px, 25px);
+  letter-spacing: 0.05em;
+  color: #ff7d28;
 }
 
 .list-card {
@@ -28,6 +60,7 @@
 .list-card__link {
   display: block;
   border-radius: 0 0 10px 10px;
+  padding-bottom: 10px;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -55,12 +88,24 @@
 
 .list-card__pay {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .list-card__content {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.products .button {
+  border: none;
+  padding: 9px 46px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #383838;
+  background: radial-gradient(14.38% 469.39% at 50% 50%, #ffe791 0%, #ffaf28 100%);
+  border-radius: 174px;
 }
 
 @media screen and (min-width: 768px) {
