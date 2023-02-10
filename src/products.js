@@ -30,7 +30,7 @@ fragment = newProducts.map(item => {
         </h3>
         <div class="list-card__pay">
           <p class="list-card__text">${item.price}</p>
-          <button class="button" type="button">Купить</button>
+          <button class="button" type="button" data-card-id='${item.id}' data-modal-pay>Купить</button>
         </div>
       </div>
     </div>
