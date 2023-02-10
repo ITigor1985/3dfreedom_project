@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: 'Полено для чистки дымоходов Hansa Полено-Трубочист(1,1кг)',
-    description: 'Описание для "Футболка черный"',
+    description: 'Полено для чистки дымоходов Hansa Полено-Трубочист(1,1кг)',
     images: 'poleno',
     price: '377 грн.',
   },
