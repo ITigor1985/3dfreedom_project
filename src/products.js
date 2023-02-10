@@ -10,17 +10,14 @@ const newProducts = products.map(item => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', ready);
+const ref = {
+  list: document.querySelector('.list-card'),
+};
 
-function ready() {
-  const ref = {
-    list: document.querySelector('.list-card'),
-  };
+let fragment = document.createDocumentFragment();
 
-  let fragment = document.createDocumentFragment();
-
-  fragment = newProducts.map(item => {
-    return `<li class="list-card__item">
+fragment = newProducts.map(item => {
+  return `<li class="list-card__item">
     <div class="list-card__link">
       <div class="list-card__image-wrapper">      
 
@@ -38,7 +35,6 @@ function ready() {
       </div>
     </div>
   </li>`;
-  });
+});
 
-  ref.list.insertAdjacentHTML('afterbegin', fragment.join(''));
-}
+ref.list.insertAdjacentHTML('afterbegin', fragment.join(''));
