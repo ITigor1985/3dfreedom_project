@@ -1,5 +1,5 @@
-import { products } from './products-data.js';
-import img from './images/desktop/products/*.jpg';
+import { products } from '../data-products/products-data.js';
+import img from '../images/desktop/products/*.jpg';
 
 const newProducts = products.map(item => {
   for (const property in img) {
@@ -10,6 +10,7 @@ const newProducts = products.map(item => {
   }
 });
 
+console.log(img);
 const ref = {
   list: document.querySelector('.list-card'),
 };
