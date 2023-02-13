@@ -135,7 +135,7 @@
       </picture>
     </div>
   </div>
-
+  <!-- -----------------Форма оплаты товара------------------------------------------------- -->
   <div class="backdrop is-hidden" data-modal-pay>
     <div class="modal-window">
       <button type="button" class="modal-window__close-btn" data-pay-close>
@@ -144,18 +144,48 @@
         </svg>
       </button>
 
-      <p class="modal-window__description">Чистка дымохода и вентиляции от сажи</p>
-      <ul class="services__list">
-        <li class="services__item">
-          <p>Срочный выезд</p>
-        </li>
-        <li class="services__item">
-          <p>Бесплатная консультация</p>
-        </li>
-        <li class="services__item">
-          <p>Оплата удобным для вас способом</p>
-        </li>
-      </ul>
+      <section class="consultation section">
+        <div class="container">
+          <h2 class="consultation__title" id="consultation__title">Оплатить</h2>
+          <div class="success-pay" id="success-pay">Заявка отправлена!</div>
+          <form class="consultation__form" id="consultation__form-pay">
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input pay"
+                minlength="1"
+                type="number"
+                name="value"
+                id="form-value"
+                placeholder="Количество"
+                value="1"
+                required
+              />
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                minlength="2"
+                type="text"
+                name="user"
+                id="form-user"
+                placeholder="Имя"
+                required
+              />
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="tel"
+                name="telep"
+                id="form-telep"
+                placeholder="Ваш телефон"
+                required
+              />
+            </div>
+            <button class="consultation__form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
       <picture>
         <source media="(min-width: 1440px)" srcset="images/desktop/header/pngegg.png 1x" />
         <source media="(min-width: 768px)" srcset="images/tablet/header/pngegg.png 1x" />

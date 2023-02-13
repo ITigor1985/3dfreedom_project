@@ -1,7 +1,7 @@
 import { products } from '../data-products/products-data.js';
 import img from '../images/desktop/products/*.jpg';
 
-const newProducts = products.map(item => {
+export const newProducts = products.map(item => {
   for (const property in img) {
     if (item.images === property) {
       item.images = img[property];
@@ -31,7 +31,7 @@ fragment = newProducts.map(item => {
         </h3>
         <div class="list-card__pay">
           <p class="list-card__text">${item.price}</p>
-          <button class="button" type="button" data-card-id='${item.id}' data-modal-pay-open>Купить</button>
+          <button class="button pay" type="button" data-card-id='${item.id}' data-modal-pay-open>Купить</button>
         </div>
       </div>
     </div>
