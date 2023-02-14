@@ -1,8 +1,6 @@
 //import axios from 'axios';
+import { URI_API, CHAT_ID } from './common/telega';
 
-const TOKEN = '5916397565:AAHaSeLRFKxqv4eV5RpJiV_8EtVr8AB3Dns';
-const CHAT_ID = '-1001671673110';
-const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 const success = document.getElementById('success');
 
 document.getElementById('consultation__form').addEventListener('submit', function (e) {

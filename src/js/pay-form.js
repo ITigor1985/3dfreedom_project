@@ -1,38 +1,56 @@
 import { newProducts } from './products';
+import { URI_API, CHAT_ID } from './common/telega';
 const LOCALSTORAGE_KEY = 'products-id';
 
-(() => {
-  const refs = {
-    openPayModalBtn: document.querySelectorAll('[data-modal-pay-open]'),
-    closeModalPayBtn: document.querySelector('[data-pay-close]'),
-    modal: document.querySelector('[data-modal-pay]'),
-  };
+const refs = {
+  openPayModalBtn: document.querySelectorAll('[data-modal-pay-open]'),
+  closeModalPayBtn: document.querySelector('[data-pay-close]'),
+  modal: document.querySelector('[data-modal-pay]'),
+  success: document.getElementById('success'),
+  windowPay: document.querySelector('.product'),
+};
 
+(() => {
   refs.openPayModalBtn.forEach(item => item.addEventListener('click', toggleModal));
 
   refs.closeModalPayBtn.addEventListener('click', toggleModal);
 
   function toggleModal(e) {
+    let fragment = document.createDocumentFragment();
     if (e.target.className === 'button pay') {
       localStorage.setItem(LOCALSTORAGE_KEY, e.target.dataset.cardId);
+
+      fragment = newProducts.map(item => {
+        if (item.id === Number(e.target.dataset.cardId)) {
+          return `
+                    <div class="list-card__link">
+                      <div class="list-card__image-wrapper">      
+
+                      <img loading="lazy" src="${item.images}" alt=${item.description} />
+                    
+                      </div>
+                      <div class="list-card__content">
+                        <h3 class="list-card__title">
+                          ${item.name}
+                        </h3>
+                      
+                      </div>
+                    </div>
+                  `;
+        }
+      });
+      refs.windowPay.insertAdjacentHTML('afterbegin', fragment.join(''));
+    } else {
+      refs.windowPay.innerHTML = '';
     }
     refs.modal.classList.toggle('is-hidden');
   }
 })();
 
-const productId = localStorage.getItem(LOCALSTORAGE_KEY);
-
-const TOKEN = '5916397565:AAHaSeLRFKxqv4eV5RpJiV_8EtVr8AB3Dns';
-const CHAT_ID = '-1001671673110';
-const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-const success = document.getElementById('success-pay');
-
 document.getElementById('consultation__form-pay').addEventListener('submit', function (e) {
   e.preventDefault();
-
-  console.log(productId);
+  const productId = localStorage.getItem(LOCALSTORAGE_KEY);
   const productName = newProducts.filter(item => item.id === Number(productId));
-  console.log(productName);
 
   let message = `<b>Заказ товара с сайта!</b>\n`;
   message += `<b>Название: </b> ${productName[0].name}\n`;
@@ -41,7 +59,7 @@ document.getElementById('consultation__form-pay').addEventListener('submit', fun
   message += `<b>Количество: </b> ${this.value.value}`;
 
   function displayNone() {
-    success.style.display = 'none';
+    refs.success.style.display = 'none';
   }
 
   const newPost = {
@@ -63,7 +81,7 @@ document.getElementById('consultation__form-pay').addEventListener('submit', fun
       this.telep.value = '';
       this.value.value = '1';
       localStorage.removeItem('LOCALSTORAGE_KEY');
-      success.style.display = 'block';
+      refs.success.style.display = 'block';
       setTimeout(displayNone, 10000);
     })
     .catch(err => {

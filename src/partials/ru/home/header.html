@@ -137,17 +137,18 @@
   </div>
   <!-- -----------------Форма оплаты товара------------------------------------------------- -->
   <div class="backdrop is-hidden" data-modal-pay>
-    <div class="modal-window">
+    <div class="modal-window pay-window">
       <button type="button" class="modal-window__close-btn" data-pay-close>
         <svg class="modal-window__icon-close" width="18" height="18">
           <use href="./images/symbol-defs.svg#icon-close-black"></use>
         </svg>
       </button>
+      <div class="product"></div>
 
       <section class="consultation section">
         <div class="container">
-          <h2 class="consultation__title" id="consultation__title">Оплатить</h2>
-          <div class="success-pay" id="success-pay">Заявка отправлена!</div>
+          <div class="success" id="success">Заявка отправлена!</div>
+
           <form class="consultation__form" id="consultation__form-pay">
             <div class="modal-form__input-wrapper">
               <input
@@ -186,12 +187,12 @@
           </form>
         </div>
       </section>
-      <picture>
+      <!-- <picture>
         <source media="(min-width: 1440px)" srcset="images/desktop/header/pngegg.png 1x" />
         <source media="(min-width: 768px)" srcset="images/tablet/header/pngegg.png 1x" />
         <source media="(max-width: 767px)" srcset="images/mobile/header/pngegg.png 1x" />
         <img class="img-trybochist" loading="lazy" src="#" alt="trybochist" />
-      </picture>
+      </picture> -->
     </div>
   </div>
 </section>

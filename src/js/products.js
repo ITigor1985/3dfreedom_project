@@ -10,7 +10,6 @@ export const newProducts = products.map(item => {
   }
 });
 
-console.log(img);
 const ref = {
   list: document.querySelector('.list-card'),
 };
