@@ -8,7 +8,26 @@ const refs = {
   modal: document.querySelector('[data-modal-pay]'),
   success: document.getElementById('success'),
   windowPay: document.querySelector('.product'),
+  plus: document.querySelector('.plus'),
+  minus: document.querySelector('.minus'),
+  quantity: document.querySelector('.modal-form__input.quantity'),
 };
+
+refs.plus.addEventListener('click', () => {
+  refs.quantity.value = Number(refs.quantity.value) + 1;
+  if (Number(refs.quantity.value) > 1) {
+    refs.minus.removeAttribute('disabled');
+  }
+  console.log(refs.quantity.value);
+});
+
+refs.minus.addEventListener('click', () => {
+  refs.quantity.value = Number(refs.quantity.value) - 1;
+  if (Number(refs.quantity.value) <= 1) {
+    refs.minus.setAttribute('disabled', true);
+  }
+  console.log(refs.quantity.value);
+});
 
 (() => {
   refs.openPayModalBtn.forEach(item => item.addEventListener('click', toggleModal));
@@ -23,14 +42,14 @@ const refs = {
       fragment = newProducts.map(item => {
         if (item.id === Number(e.target.dataset.cardId)) {
           return `
-                    <div class="list-card__link">
-                      <div class="list-card__image-wrapper">      
+                    <div class="list-card__link pay">
+                      <div class="list-card__image-wrapper pay">      
 
                       <img loading="lazy" src="${item.images}" alt=${item.description} />
                     
                       </div>
                       <div class="list-card__content">
-                        <h3 class="list-card__title">
+                        <h3 class="list-card__title container">
                           ${item.name}
                         </h3>
                       
@@ -42,6 +61,7 @@ const refs = {
       refs.windowPay.insertAdjacentHTML('afterbegin', fragment.join(''));
     } else {
       refs.windowPay.innerHTML = '';
+      refs.quantity.value = 1;
     }
     refs.modal.classList.toggle('is-hidden');
   }
@@ -82,6 +102,7 @@ document.getElementById('consultation__form-pay').addEventListener('submit', fun
       this.value.value = '1';
       localStorage.removeItem('LOCALSTORAGE_KEY');
       refs.success.style.display = 'block';
+      refs.minus.setAttribute('disabled', true);
       setTimeout(displayNone, 10000);
     })
     .catch(err => {

@@ -6,3 +6,5 @@ import './js/smoothScroll.js';
 import './js/header.js';
 import './js/consultation-form.js';
 import './js/article.js';
+import './js/products.js';
+import './js/pay-form.js';

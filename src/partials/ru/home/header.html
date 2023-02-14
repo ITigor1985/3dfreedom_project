@@ -145,26 +145,30 @@
       </button>
       <div class="product"></div>
 
-      <section class="consultation section">
+      <section class="consultation">
         <div class="container">
           <div class="success" id="success">Заявка отправлена!</div>
 
-          <form class="consultation__form" id="consultation__form-pay">
-            <div class="modal-form__input-wrapper">
+          <form class="consultation__form pay" id="consultation__form-pay">
+            <div class="modal-form__input-wrapper quantity">
+              <p class="text-quantity">Количество</p>
+              <button class="minus" disabled type="button"><span>-</span></button>
+
               <input
-                class="modal-form__input pay"
+                class="modal-form__input quantity"
                 minlength="1"
-                type="number"
+                type="text"
                 name="value"
                 id="form-value"
                 placeholder="Количество"
                 value="1"
                 required
               />
+              <button class="plus" type="button"><span>+</span></button>
             </div>
-            <div class="modal-form__input-wrapper">
+            <div class="modal-form__input-wrapper pay">
               <input
-                class="modal-form__input"
+                class="modal-form__input pay"
                 minlength="2"
                 type="text"
                 name="user"
@@ -173,9 +177,9 @@
                 required
               />
             </div>
-            <div class="modal-form__input-wrapper">
+            <div class="modal-form__input-wrapper pay">
               <input
-                class="modal-form__input"
+                class="modal-form__input pay"
                 type="tel"
                 name="telep"
                 id="form-telep"
@@ -183,7 +187,7 @@
                 required
               />
             </div>
-            <button class="consultation__form-button" type="submit">Отправить</button>
+            <button class="consultation__form-button pay" type="submit">Отправить</button>
           </form>
         </div>
       </section>

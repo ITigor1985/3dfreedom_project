@@ -282,6 +282,63 @@
   color: #ffaf28;
 }
 
+.modal-form__input-wrapper.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.plus {
+  display: flex;
+  justify-content: center;
+  padding: 0 0;
+  border: none;
+  background-color: #ffffff;
+  font-size: 26px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: green;
+  width: 30px;
+  height: 30px;
+}
+
+.minus {
+  display: flex;
+  justify-content: center;
+  padding: 0 0;
+  align-items: center;
+  border: none;
+  background-color: #ffffff;
+  font-size: 30px;
+  line-height: 1;
+  margin-left: auto;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: green;
+  width: 30px;
+  height: 30px;
+}
+
+.modal-form__input.quantity {
+  text-align: center;
+  height: 30px;
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 30px;
+  padding-left: 0;
+  border: none;
+  font-size: 20px;
+  color: #383838;
+}
+
+.consultation__form.pay {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text-quantity {
+  font-family: Montserrat;
+  font-weight: 700;
+}
 @media screen and (max-width: 374px) {
   .img-trybochist {
     position: absolute;
@@ -456,6 +513,7 @@
   }
   .modal-window {
     width: 642px;
+    max-height: 750px;
   }
   .modal-window__description {
     @include font(24px, 29px);
