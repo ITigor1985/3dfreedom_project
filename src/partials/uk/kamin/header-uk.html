@@ -126,4 +126,67 @@
       </picture>
     </div>
   </div>
+  <!-- -----------------Форма оплаты товара------------------------------------------------- -->
+  <div class="backdrop is-hidden" data-modal-pay>
+    <div class="modal-window pay-window">
+      <button type="button" class="modal-window__close-btn" data-pay-close>
+        <svg class="modal-window__icon-close" width="18" height="18">
+          <use href="./images/symbol-defs.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <div class="product"></div>
+
+      <section class="consultation">
+        <div class="container">
+          <div class="success" id="success">Заявка відправлена!</div>
+
+          <form class="consultation__form pay" id="consultation__form-pay">
+            <div class="modal-form__input-wrapper quantity">
+              <p class="text-quantity">Кількість</p>
+              <button class="minus" disabled type="button"><span>-</span></button>
+
+              <input
+                class="modal-form__input quantity"
+                minlength="1"
+                type="text"
+                name="value"
+                id="form-value"
+                value="1"
+                required
+              />
+              <button class="plus" type="button"><span>+</span></button>
+            </div>
+            <div class="modal-form__input-wrapper pay">
+              <input
+                class="modal-form__input pay"
+                minlength="2"
+                type="text"
+                name="user"
+                id="form-user"
+                placeholder="Ваше ім'я"
+                required
+              />
+            </div>
+            <div class="modal-form__input-wrapper pay">
+              <input
+                class="modal-form__input pay"
+                type="tel"
+                name="telep"
+                id="form-telep"
+                placeholder="Ваш телефон"
+                required
+              />
+            </div>
+            <button class="consultation__form-button pay" type="submit">Відправити</button>
+          </form>
+        </div>
+      </section>
+      <!-- <picture>
+          <source media="(min-width: 1440px)" srcset="images/desktop/header/pngegg.png 1x" />
+          <source media="(min-width: 768px)" srcset="images/tablet/header/pngegg.png 1x" />
+          <source media="(max-width: 767px)" srcset="images/mobile/header/pngegg.png 1x" />
+          <img class="img-trybochist" loading="lazy" src="#" alt="trybochist" />
+        </picture> -->
+    </div>
+  </div>
 </section>

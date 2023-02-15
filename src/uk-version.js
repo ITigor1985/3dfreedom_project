@@ -13,6 +13,8 @@ import './js/consultation-form.js';
 import './js/header.js';
 import './js/video-blog.js';
 import './js/article.js';
+import './js/productsUa.js';
+import './js/pay-form-ua.js';
 import './js/problems.js';
 import './js/cleaning.js';
 import './js/before_after.js';
