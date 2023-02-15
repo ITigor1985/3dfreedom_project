@@ -1,5 +1,6 @@
 import { newProductsUa } from './productsUa';
 import { URI_API, CHAT_ID } from './common/telega';
+import { quantity } from './helpers/quantity';
 const LOCALSTORAGE_KEY = 'products-id';
 
 const refs = {
@@ -18,6 +19,9 @@ refs.plus.addEventListener('click', () => {
   if (Number(refs.quantity.value) > 1) {
     refs.minus.removeAttribute('disabled');
   }
+  if (Number(refs.quantity.value) > 98) {
+    refs.plus.setAttribute('disabled', true);
+  }
 });
 
 refs.minus.addEventListener('click', () => {
@@ -25,6 +29,13 @@ refs.minus.addEventListener('click', () => {
   if (Number(refs.quantity.value) <= 1) {
     refs.minus.setAttribute('disabled', true);
   }
+  if (Number(refs.quantity.value) <= 99) {
+    refs.plus.removeAttribute('disabled');
+  }
+});
+
+refs.quantity.addEventListener('blur', e => {
+  e.currentTarget.value = quantity(e.currentTarget.value);
 });
 
 (() => {
