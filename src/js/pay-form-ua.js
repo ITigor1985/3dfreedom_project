@@ -6,7 +6,7 @@ const refs = {
   openPayModalBtn: document.querySelectorAll('[data-modal-pay-open]'),
   closeModalPayBtn: document.querySelector('[data-pay-close]'),
   modal: document.querySelector('[data-modal-pay]'),
-  success: document.getElementById('success'),
+  success: document.querySelector('.success'),
   windowPay: document.querySelector('.product'),
   plus: document.querySelector('.plus'),
   minus: document.querySelector('.minus'),
@@ -18,7 +18,6 @@ refs.plus.addEventListener('click', () => {
   if (Number(refs.quantity.value) > 1) {
     refs.minus.removeAttribute('disabled');
   }
-  console.log(refs.quantity.value);
 });
 
 refs.minus.addEventListener('click', () => {
@@ -26,7 +25,6 @@ refs.minus.addEventListener('click', () => {
   if (Number(refs.quantity.value) <= 1) {
     refs.minus.setAttribute('disabled', true);
   }
-  console.log(refs.quantity.value);
 });
 
 (() => {
