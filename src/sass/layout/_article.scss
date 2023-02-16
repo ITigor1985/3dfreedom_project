@@ -68,11 +68,29 @@
     }
   }
 }
+
 .article__title.kamin {
   @media screen and (min-width: 1440px) {
     &::before {
       content: '';
       width: 880px;
+    }
+  }
+}
+.article__title.chimney-sweep-services {
+  @media screen and (min-width: 1440px) {
+    &::before {
+      content: '';
+      width: 790px;
+    }
+  }
+}
+
+.article__title.chimney-sweep-services-ua {
+  @media screen and (min-width: 1440px) {
+    &::before {
+      content: '';
+      width: 770px;
     }
   }
 }
