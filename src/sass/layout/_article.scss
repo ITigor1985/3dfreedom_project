@@ -94,6 +94,15 @@
     }
   }
 }
+
+.article__title.uslugi-pechnika {
+  @media screen and (min-width: 1440px) {
+    &::before {
+      content: '';
+      width: 860px;
+    }
+  }
+}
 .article__title.kamin-uk {
   @media screen and (min-width: 1440px) {
     &::before {
