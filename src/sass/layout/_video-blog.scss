@@ -14,28 +14,8 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/video4.jpg') no-repeat center;
-
-  background-size: 20%, cover;
 }
 
-@supports (
-  (background: url('../images/desktop/video-blog/video4.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video4 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/video4.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
-}
 .video.video1 {
   display: block;
   position: relative;
@@ -43,27 +23,6 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/foto1.jpg') no-repeat center;
-
-  background-size: 20%, cover;
-}
-
-@supports (
-  (background: url('../images/desktop/video-blog/foto1.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video1 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/foto1.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
 }
 
 .video.video2 {
@@ -73,27 +32,6 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/foto3.jpg') no-repeat center;
-
-  background-size: 20%, cover;
-}
-
-@supports (
-  (background: url('../images/desktop/video-blog/foto3.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video2 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/foto3.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
 }
 
 .video.video3 {
@@ -103,27 +41,6 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/foto2.jpg') no-repeat center;
-
-  background-size: 20%, cover;
-}
-
-@supports (
-  (background: url('../images/desktop/video-blog/foto2.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video3 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/foto2.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
 }
 
 .video.video5 {
@@ -133,28 +50,8 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/foto1-uk.jpg') no-repeat center;
-
-  background-size: 20%, cover;
 }
 
-@supports (
-  (background: url('../images/desktop/video-blog/foto1-uk.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video5 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/foto1-uk.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
-}
 .video.video6 {
   display: block;
   position: relative;
@@ -162,27 +59,6 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/foto2-uk.jpg') no-repeat center;
-
-  background-size: 20%, cover;
-}
-
-@supports (
-  (background: url('../images/desktop/video-blog/foto2-uk.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video6 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/foto2-uk.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
 }
 
 .video.video7 {
@@ -192,27 +68,6 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/foto3-uk.jpg') no-repeat center;
-
-  background-size: 20%, cover;
-}
-
-@supports (
-  (background: url('../images/desktop/video-blog/foto3-uk.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video7 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/foto3-uk.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
 }
 
 .video.video8 {
@@ -222,27 +77,6 @@
   height: 100%;
   min-height: 200px;
   max-height: 240px;
-  background: url('../images/desktop/video-blog/play.png') no-repeat center,
-    url('../images/desktop/video-blog/video4-uk.jpg') no-repeat center;
-
-  background-size: 20%, cover;
-}
-
-@supports (
-  (background: url('../images/desktop/video-blog/video4-uk.webp')) and
-    (background: url('../images/desktop/video-blog/play.webp'))
-) {
-  .video.video8 {
-    display: block;
-    position: relative;
-    max-width: 425px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 240px;
-    background: url('../images/desktop/video-blog/play.webp') no-repeat center,
-      url('../images/desktop/video-blog/video4-uk.webp') no-repeat center;
-    background-size: 20%, cover;
-  }
 }
 
 iframe {
