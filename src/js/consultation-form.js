@@ -1,7 +1,18 @@
 //import axios from 'axios';
 import { URI_API, CHAT_ID } from './common/telega';
+import { nameCheck, telephoneCheck } from './helpers/validateForm';
 
 const success = document.getElementById('success');
+const inputName = document.querySelector('#form-username');
+const inputeTelephone = document.querySelector('#form-telephon');
+//console.log(input);
+inputName.addEventListener('blur', function (e) {
+  nameCheck(e.currentTarget.value);
+});
+
+inputeTelephone.addEventListener('blur', function (e) {
+  telephoneCheck(e.currentTarget.value);
+});
 
 document.getElementById('consultation__form').addEventListener('submit', function (e) {
   e.preventDefault();
