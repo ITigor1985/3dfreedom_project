@@ -6,6 +6,9 @@
   color: #ff2828;
   margin-bottom: 15px;
   padding-left: 15px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 0px;
+  }
 }
 
 .errorTel {
@@ -16,6 +19,9 @@
   color: #ff2828;
   margin-bottom: 15px;
   padding-left: 15px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 0px;
+  }
 }
 .consultation__form {
   font-family: Montserrat;
@@ -42,7 +48,14 @@
   }
 }
 .modal-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.modal-form__input-wrapper.quantity {
+  display: flex;
+  flex-direction: row;
 }
 
 .modal-form__input {

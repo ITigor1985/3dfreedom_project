@@ -1,6 +1,7 @@
 import { newProducts } from './products';
 import { URI_API, CHAT_ID } from './common/telega';
 import { quantity } from './helpers/quantity';
+import { nameCheck, telephoneCheck } from './helpers/validateForm';
 const LOCALSTORAGE_KEY = 'products-id';
 
 const refs = {
@@ -13,6 +14,8 @@ const refs = {
   minus: document.querySelector('.minus'),
   quantity: document.querySelector('.modal-form__input.quantity'),
 };
+const error = document.querySelector('.error');
+const errorTel = document.querySelector('.errorTel');
 
 refs.plus.addEventListener('click', () => {
   refs.quantity.value = Number(refs.quantity.value) + 1;
@@ -81,40 +84,60 @@ document.getElementById('consultation__form-pay').addEventListener('submit', fun
   const productId = localStorage.getItem(LOCALSTORAGE_KEY);
   const productName = newProducts.filter(item => item.id === Number(productId));
 
-  let message = `<b>Заказ товара с сайта!</b>\n`;
-  message += `<b>Название: </b> ${productName[0].name}\n`;
-  message += `<b>Отправитель: </b> ${this.user.value}\n`;
-  message += `<b>Телефон: </b> ${this.telep.value}\n`;
-  message += `<b>Количество: </b> ${this.value.value}`;
+  const {
+    elements: { username, telephon },
+  } = e.currentTarget;
 
-  function displayNone() {
-    refs.success.style.display = 'none';
-  }
+  let errorsName = nameCheck(username.value);
+  let errorsTelephone = telephoneCheck(telephon.value);
 
-  const newPost = {
-    chat_id: CHAT_ID,
-    parse_mode: 'html',
-    text: message,
-  };
+  if (errorsName.length !== 0 || errorsTelephone.length !== 0) {
+    error.innerHTML = errorsName.map(item => `<p>${item}</p>`).join('');
+    error.style.display = 'block';
+    errorTel.innerHTML = errorsTelephone.map(item => `<p>${item}</p>`).join('');
+    errorTel.style.display = 'block';
+    return;
+  } else {
+    error.innerHTML = '';
+    error.style.display = 'none';
+    errorTel.innerHTML = '';
+    errorTel.style.display = 'none';
 
-  fetch(URI_API, {
-    method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
-    body: JSON.stringify(newPost), // Тело запроса в JSON-формате
-    headers: {
-      // Добавляем необходимые заголовки
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  })
-    .then(response => {
-      this.user.value = '';
-      this.telep.value = '';
-      this.value.value = '1';
-      localStorage.removeItem('LOCALSTORAGE_KEY');
-      refs.success.style.display = 'block';
-      refs.minus.setAttribute('disabled', true);
-      setTimeout(displayNone, 10000);
+    let message = `<b>Заказ товара с сайта!</b>\n`;
+    message += `<b>Название: </b> ${productName[0].name}\n`;
+    message += `<b>Отправитель: </b> ${this.username.value}\n`;
+    message += `<b>Телефон: </b> ${this.telephon.value}\n`;
+    message += `<b>Количество: </b> ${this.value.value}`;
+
+    function displayNone() {
+      refs.success.style.display = 'none';
+    }
+
+    const newPost = {
+      chat_id: CHAT_ID,
+      parse_mode: 'html',
+      text: message,
+    };
+
+    fetch(URI_API, {
+      method: 'POST', // Здесь так же могут быть GET, PUT, DELETE
+      body: JSON.stringify(newPost), // Тело запроса в JSON-формате
+      headers: {
+        // Добавляем необходимые заголовки
+        'Content-type': 'application/json; charset=UTF-8',
+      },
     })
-    .catch(err => {
-      console.warn(err);
-    });
+      .then(response => {
+        this.username.value = '';
+        this.telephon.value = '';
+        this.value.value = '1';
+        localStorage.removeItem('LOCALSTORAGE_KEY');
+        refs.success.style.display = 'block';
+        refs.minus.setAttribute('disabled', true);
+        setTimeout(displayNone, 10000);
+      })
+      .catch(err => {
+        console.warn(err);
+      });
+  }
 });

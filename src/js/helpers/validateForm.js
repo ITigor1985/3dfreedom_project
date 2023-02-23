@@ -1,13 +1,14 @@
 const button = document.querySelector('.consultation__form-button.submit');
-const error = document.querySelector('.error');
-const errorTel = document.querySelector('.errorTel');
+
+let errorsName = [];
+let errorsTelephone = [];
 
 export function nameCheck(name) {
-  nameValidations(name);
+  return nameValidations(name);
 }
 
 export function telephoneCheck(telephone) {
-  telephoneValidations(telephone);
+  return telephoneValidations(telephone);
 }
 
 // name validate --------------------------------------
@@ -18,40 +19,22 @@ const nameCheckObj = {
   onlyLetters: 'Только буквы',
 };
 
-function errorName(typeError) {
-  button.setAttribute('disabled', true);
-  error.innerHTML = typeError;
-  error.style.display = 'block';
-}
-
-function inputNameValid() {
-  button.removeAttribute('disabled');
-  error.style.display = 'none';
-  return true;
-}
-
 function nameValidations(name) {
+  errorsName = [];
   if (name.length < 2) {
-    errorName(nameCheckObj.minLength);
-    return false;
-  } else {
-    inputNameValid();
+    errorsName.push(nameCheckObj.minLength);
   }
 
   if (name.length > 16) {
-    errorName(nameCheckObj.maxLength);
-    return false;
-  } else {
-    inputNameValid();
+    errorsName.push(nameCheckObj.maxLength);
   }
 
   if (!name.match(/^[а-яёa-z]+$/iu)) {
-    errorName(nameCheckObj.onlyLetters);
-    return false;
-  } else {
-    inputNameValid();
+    errorsName.push(nameCheckObj.onlyLetters);
   }
+  return errorsName;
 }
+
 // telephone validate --------------------------------------
 const telephoneCheckObj = {
   minLength: 'Минимум 7-м цифр',
@@ -59,37 +42,18 @@ const telephoneCheckObj = {
   onlyNumbers: 'Только цифры',
 };
 
-function errorTelephone(typeError) {
-  button.setAttribute('disabled', true);
-  errorTel.innerHTML = typeError;
-  errorTel.style.display = 'block';
-}
-
-function inputTelephoneValid() {
-  button.removeAttribute('disabled');
-  errorTel.style.display = 'none';
-  return true;
-}
-
 function telephoneValidations(telephone) {
+  errorsTelephone = [];
   if (!telephone.match(/^\d+$/)) {
-    errorTelephone(telephoneCheckObj.onlyNumbers);
-    return false;
-  } else {
-    inputTelephoneValid();
+    errorsTelephone.push(telephoneCheckObj.onlyNumbers);
   }
 
   if (telephone.length < 7) {
-    errorTelephone(telephoneCheckObj.minLength);
-    return false;
-  } else {
-    inputTelephoneValid();
+    errorsTelephone.push(telephoneCheckObj.minLength);
   }
 
   if (telephone.length >= 11) {
-    errorTelephone(telephoneCheckObj.maxLength);
-    return false;
-  } else {
-    inputTelephoneValid();
+    errorsTelephone.push(telephoneCheckObj.maxLength);
   }
+  return errorsTelephone;
 }
