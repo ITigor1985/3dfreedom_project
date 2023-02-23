@@ -1,5 +1,3 @@
-const button = document.querySelector('.consultation__form-button.submit');
-
 let errorsName = [];
 let errorsTelephone = [];
 
