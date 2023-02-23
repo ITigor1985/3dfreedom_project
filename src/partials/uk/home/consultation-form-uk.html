@@ -4,7 +4,7 @@
       Замовте безкоштовную консультацію спеціаліста!
     </h2>
     <div class="success" id="success">Заявка відправлена!</div>
-    <form class="consultation__form" id="consultation__form">
+    <form class="consultation__form" id="consultation__form" data-lang="ua">
       <div class="modal-form__input-wrapper">
         <input
           class="modal-form__input"
@@ -15,6 +15,7 @@
           placeholder="Ім'я"
           required
         />
+        <p class="errorConsultationForm"></p>
       </div>
       <div class="modal-form__input-wrapper">
         <input
@@ -25,6 +26,7 @@
           placeholder="Ваш телефон"
           required
         />
+        <p class="errorTelConsultationForm"></p>
       </div>
       <button class="consultation__form-button" type="submit">Відправити</button>
     </form>
