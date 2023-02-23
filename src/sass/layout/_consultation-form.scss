@@ -10,6 +10,20 @@
     margin-top: 0px;
   }
 }
+
+.errorTel {
+  margin-top: -15px;
+  display: none;
+  font-size: 14px;
+  line-height: 1;
+  color: #ff2828;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 0px;
+  }
+}
+
 .errorConsultationForm {
   margin-top: -15px;
   display: none;
@@ -35,18 +49,6 @@
   }
 }
 
-.errorTel {
-  margin-top: -15px;
-  display: none;
-  font-size: 14px;
-  line-height: 1;
-  color: #ff2828;
-  margin-bottom: 15px;
-  padding-left: 15px;
-  @media screen and (min-width: 1440px) {
-    margin-top: 0px;
-  }
-}
 .consultation__form {
   font-family: Montserrat;
   width: 100%;
