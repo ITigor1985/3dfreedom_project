@@ -1,12 +1,13 @@
 //import axios from 'axios';
 import { URI_API, CHAT_ID } from './common/telega';
 import { nameCheck, telephoneCheck } from './helpers/validateForm';
-const error = document.querySelector('.error');
-const errorTel = document.querySelector('.errorTel');
+const error = document.querySelector('.errorConsultationForm');
+const errorTel = document.querySelector('.errorTelConsultationForm');
 
 const success = document.getElementById('success');
 
 document.getElementById('consultation__form').addEventListener('submit', function (e) {
+  console.log(e);
   e.preventDefault();
   const {
     elements: { username, telephon },
