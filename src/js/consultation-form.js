@@ -7,14 +7,13 @@ const errorTel = document.querySelector('.errorTelConsultationForm');
 const success = document.getElementById('success');
 
 document.getElementById('consultation__form').addEventListener('submit', function (e) {
-  console.log(e);
   e.preventDefault();
   const {
     elements: { username, telephon },
   } = e.currentTarget;
 
-  let errorsName = nameCheck(username.value);
-  let errorsTelephone = telephoneCheck(telephon.value);
+  let errorsName = nameCheck(username.value, e.target.dataset.lang);
+  let errorsTelephone = telephoneCheck(telephon.value, e.target.dataset.lang);
 
   if (errorsName.length !== 0 || errorsTelephone.length !== 0) {
     error.innerHTML = errorsName.map(item => `<p>${item}</p>`).join('');

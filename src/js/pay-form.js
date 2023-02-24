@@ -81,6 +81,7 @@ refs.quantity.addEventListener('blur', e => {
 
 document.getElementById('consultation__form-pay').addEventListener('submit', function (e) {
   e.preventDefault();
+
   const productId = localStorage.getItem(LOCALSTORAGE_KEY);
   const productName = newProducts.filter(item => item.id === Number(productId));
 
@@ -88,8 +89,8 @@ document.getElementById('consultation__form-pay').addEventListener('submit', fun
     elements: { username, telephon },
   } = e.currentTarget;
 
-  let errorsName = nameCheck(username.value);
-  let errorsTelephone = telephoneCheck(telephon.value);
+  let errorsName = nameCheck(username.value, e.target.dataset.lang);
+  let errorsTelephone = telephoneCheck(telephon.value, e.target.dataset.lang);
 
   if (errorsName.length !== 0 || errorsTelephone.length !== 0) {
     error.innerHTML = errorsName.map(item => `<p>${item}</p>`).join('');

@@ -1,12 +1,12 @@
 let errorsName = [];
 let errorsTelephone = [];
 
-export function nameCheck(name) {
-  return nameValidations(name);
+export function nameCheck(name, lang) {
+  return nameValidations(name, lang);
 }
 
-export function telephoneCheck(telephone) {
-  return telephoneValidations(telephone);
+export function telephoneCheck(telephone, lang) {
+  return telephoneValidations(telephone, lang);
 }
 
 // name validate --------------------------------------
@@ -17,20 +17,41 @@ const nameCheckObj = {
   onlyLetters: 'Только буквы',
 };
 
-function nameValidations(name) {
+const nameCheckObjUa = {
+  minLength: 'Мінімум 2-і літери',
+  maxLength: 'Максимум 15 букв',
+  onlyLetters: 'Тільки літери',
+};
+
+function nameValidations(name, lang) {
   errorsName = [];
-  if (name.length < 2) {
-    errorsName.push(nameCheckObj.minLength);
-  }
+  if (lang === 'ru') {
+    if (name.length < 2) {
+      errorsName.push(nameCheckObj.minLength);
+    }
 
-  if (name.length > 16) {
-    errorsName.push(nameCheckObj.maxLength);
-  }
+    if (name.length > 16) {
+      errorsName.push(nameCheckObj.maxLength);
+    }
 
-  if (!name.match(/^[а-яёa-z]+$/iu)) {
-    errorsName.push(nameCheckObj.onlyLetters);
+    if (!name.match(/^[а-яёa-z]+$/iu)) {
+      errorsName.push(nameCheckObj.onlyLetters);
+    }
+    return errorsName;
+  } else {
+    if (name.length < 2) {
+      errorsName.push(nameCheckObjUa.minLength);
+    }
+
+    if (name.length > 16) {
+      errorsName.push(nameCheckObjUa.maxLength);
+    }
+
+    if (!name.match(/^[а-яёa-z]+$/iu)) {
+      errorsName.push(nameCheckObjUa.onlyLetters);
+    }
+    return errorsName;
   }
-  return errorsName;
 }
 
 // telephone validate --------------------------------------
@@ -40,18 +61,39 @@ const telephoneCheckObj = {
   onlyNumbers: 'Только цифры',
 };
 
-function telephoneValidations(telephone) {
+const telephoneCheckObjUa = {
+  minLength: 'Мінімум 7-м цифр',
+  maxLength: 'Максимум 10 цифр',
+  onlyNumbers: 'Тільки цифри',
+};
+
+function telephoneValidations(telephone, lang) {
   errorsTelephone = [];
-  if (!telephone.match(/^\d+$/)) {
-    errorsTelephone.push(telephoneCheckObj.onlyNumbers);
-  }
+  if (lang === 'ru') {
+    if (!telephone.match(/^\d+$/)) {
+      errorsTelephone.push(telephoneCheckObj.onlyNumbers);
+    }
 
-  if (telephone.length < 7) {
-    errorsTelephone.push(telephoneCheckObj.minLength);
-  }
+    if (telephone.length < 7) {
+      errorsTelephone.push(telephoneCheckObj.minLength);
+    }
 
-  if (telephone.length >= 11) {
-    errorsTelephone.push(telephoneCheckObj.maxLength);
+    if (telephone.length >= 11) {
+      errorsTelephone.push(telephoneCheckObj.maxLength);
+    }
+    return errorsTelephone;
+  } else {
+    if (!telephone.match(/^\d+$/)) {
+      errorsTelephone.push(telephoneCheckObjUa.onlyNumbers);
+    }
+
+    if (telephone.length < 7) {
+      errorsTelephone.push(telephoneCheckObjUa.minLength);
+    }
+
+    if (telephone.length >= 11) {
+      errorsTelephone.push(telephoneCheckObjUa.maxLength);
+    }
+    return errorsTelephone;
   }
-  return errorsTelephone;
 }
