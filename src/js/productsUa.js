@@ -30,7 +30,7 @@ fragment = newProductsUa.map(item => {
           </h3>
           <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="list-card__pay">
             
-            <p itemprop="price" class="list-card__text">${item.price}&nbsp<span itemprop="priceCurrency" content="UAH">${item.priceCurrency}</span></p>
+          <span itemprop="price" class="list-card__text">${item.price}</span>&nbsp<span class="list-card__text" itemprop="priceCurrency" content="UAH">${item.priceCurrency}</span>
             <button class="button pay" type="button" data-card-id='${item.id}' data-modal-pay-open>Купити</button>
           </div>
         </div>
