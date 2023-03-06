@@ -77,6 +77,14 @@
     }
   }
 }
+.article__title.vent {
+  @media screen and (min-width: 1440px) {
+    &::before {
+      content: '';
+      width: 425px;
+    }
+  }
+}
 .article__title.chimney-sweep-services {
   @media screen and (min-width: 1440px) {
     &::before {

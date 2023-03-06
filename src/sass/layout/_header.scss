@@ -86,6 +86,13 @@
   background-size: cover;
   height: 650px;
 }
+.header-middle.vent {
+  padding-top: 300px;
+  background: no-repeat url('../images/desktop/header/vent.jpg');
+  // background-attachment: fixed;
+  background-size: cover;
+  height: 650px;
+}
 
 .wrapper {
   padding-top: 435px;
@@ -402,6 +409,12 @@
     background-attachment: fixed;
     height: 500px;
   }
+  .header-middle.vent {
+    padding-top: 150px;
+    background: no-repeat url('../images/desktop/header/vent.jpg');
+    background-attachment: fixed;
+    height: 500px;
+  }
   .header-middle-title {
     font-size: 36px;
     line-height: 1.22;
@@ -485,6 +498,16 @@
     padding-right: 0px;
     padding-left: 0px;
     background: no-repeat url('../images/desktop/header/trubochist.jpg');
+    background-attachment: fixed;
+
+    background-size: cover;
+    height: 800px;
+  }
+  .header-middle.vent {
+    padding-top: 230px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background: no-repeat url('../images/desktop/header/vent.jpg');
     background-attachment: fixed;
 
     background-size: cover;
