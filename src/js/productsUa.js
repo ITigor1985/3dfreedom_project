@@ -17,19 +17,20 @@ const ref = {
 let fragment = document.createDocumentFragment();
 
 fragment = newProductsUa.map(item => {
-  return `<li class="list-card__item">
+  return `<li itemscope itemtype="https://schema.org/Product" class="list-card__item">
       <div class="list-card__link">
         <div class="list-card__image-wrapper">      
   
-        <img loading="lazy" src="${item.images}" alt=${item.description} />
+        <img itemprop="image" loading="lazy" src="${item.images}" alt=${item.description} />
       
         </div>
         <div class="list-card__content">
-          <h3 class="list-card__title">
+          <h3 itemprop="name" class="list-card__title">
             ${item.name}
           </h3>
-          <div class="list-card__pay">
-            <p class="list-card__text">${item.price}</p>
+          <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="list-card__pay">
+            
+            <p itemprop="price" class="list-card__text">${item.price}&nbsp<span itemprop="priceCurrency" content="UAH">${item.priceCurrency}</span></p>
             <button class="button pay" type="button" data-card-id='${item.id}' data-modal-pay-open>Купити</button>
           </div>
         </div>
