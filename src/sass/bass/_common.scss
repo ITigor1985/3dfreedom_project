@@ -24,6 +24,7 @@ body {
   color: var(--main-text-color);
   letter-spacing: 0.03em;
   width: 100vw;
+  text-rendering: optimizeLegibility;
 }
 
 .list {
