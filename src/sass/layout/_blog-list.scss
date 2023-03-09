@@ -1,10 +1,12 @@
 // colour stuff
 
 body .blog {
+  flex: 1;
   background: var(--lightBG-color);
   color: var(--darkGrey-color);
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
+  min-height: 100%;
 }
 
 a.btn {

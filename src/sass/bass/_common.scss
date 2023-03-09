@@ -21,10 +21,22 @@ img {
 }
 
 body {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   color: var(--main-text-color);
   letter-spacing: 0.03em;
   width: 100vw;
+
   text-rendering: optimizeLegibility;
+}
+
+main {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .list {
