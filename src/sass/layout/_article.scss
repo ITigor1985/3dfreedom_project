@@ -294,3 +294,33 @@
     transform: translateY(0px);
   }
 }
+
+// for article blog------------------
+.chistka-dymohoda-luchshie-sposoby {
+  padding-top: 30px;
+  padding-bottom: 30;
+  @media screen and(min-width:1440px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.article__title-chistka-dymohoda-luchshie-sposoby {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 20px;
+  color: #ff7d28;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    line-height: 67px;
+    margin-bottom: 40px;
+  }
+}
