@@ -3,26 +3,75 @@
     <div class="cards">
       <div class="card">
         <div class="card__image-holder">
-          <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/desktop/blog/chimney@1x.webp 1x,
+                ./images/desktop/blog/chimney@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/desktop/blog/chimney@1x.jpg 1x,
+                ./images/desktop/blog/chimney@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/desktop/blog/chimney@1x.webp 1x,
+                ./images/desktop/blog/chimney@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/desktop/blog/chimney@1x.jpg 1x,
+                ./images/desktop/blog/chimney@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                ./images/desktop/blog/chimney@1x.webp 1x,
+                ./images/desktop/blog/chimney@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                ./images/desktop/blog/chimney@1x.jpg 1x,
+                ./images/desktop/blog/chimney@2x.jpg 2x
+              "
+            />
+            <img
+              class="card__image"
+              loading="lazy"
+              src="#"
+              alt="Чистка дымохода - лучшие способы"
+            />
+          </picture>
         </div>
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a type="button" class="toggle-info btn">
             <span class="left"></span>
             <span class="right"></span>
           </a>
-          <h2>
-            Card title
-            <small>Image from unsplash.com</small>
-          </h2>
+          <h2>Чистка дымохода - лучшие способы.</h2>
         </div>
         <div class="card-flap flap1">
           <div class="card-description">
-            This grid is an attempt to make something nice that works on touch devices. Ignoring
-            hover states when they're not available etc.
+            Разнообразие методов очистки очень велико, но их можно поделить на три основные группы:
+            механические, народные и химические.
           </div>
           <div class="card-flap flap2">
             <div class="card-actions">
-              <a href="#" class="btn">Read more</a>
+              <a href="./chistka-dymohoda-luchshie-sposoby.html" class="btn">Читать далее</a>
             </div>
           </div>
         </div>

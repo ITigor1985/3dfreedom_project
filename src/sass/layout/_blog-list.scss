@@ -55,6 +55,7 @@ div.card {
 
   img {
     max-width: 290px;
+    min-height: 217px;
   }
 
   .card__image-holder {
@@ -99,7 +100,8 @@ div.card {
     }
 
     h2 {
-      font-size: 24px;
+      font-family: Montserrat;
+      font-size: 20px;
       font-weight: 700;
       letter-spacing: -0.05em;
       margin: 0;
