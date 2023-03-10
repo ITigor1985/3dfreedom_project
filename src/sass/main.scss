@@ -4,9 +4,9 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-
-@import './bass/common';
 @import './bass/font';
+@import './bass/common';
+
 @import './components/container';
 @import './components/h2-title';
 @import './utils/mixin';
