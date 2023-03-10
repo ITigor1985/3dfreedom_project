@@ -1,0 +1,29 @@
+.broad-crumb {
+  font-family: Montserrat;
+}
+
+.broad-crumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.broad-crumb__list-item {
+  color: #66696f;
+  font-size: 13px;
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
+.broad-crumb__list-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
