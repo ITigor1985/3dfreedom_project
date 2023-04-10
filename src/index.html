@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYXPT9DKXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'G-YYXPT9DKXX');
-</script>
+      gtag('config', 'G-YYXPT9DKXX');
+    </script>
     <title>Чистка дымохода ☟</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -79,35 +81,40 @@
     /></noscript>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/preloader.html"></include> -->
-    <include src="./partials/ru/home/header.html"></include>
-    <main>
-      <include src="./partials/ru/home/video-blog.html"></include>
-      <include src="./partials/ru/home/consultation-form.html"></include>
-      <!-- <include src="./partials/ru/price.html"></include> -->
-      <include src="./partials/ru/home/additional-service.html"></include>
-      <include src="./partials/ru/home/article.html"></include>
-      <include src="./partials/ru/home/products.html"></include>
-      <include src="./partials/ru/home/advantage.html"></include>
-      <include src="./partials/ru/home/problems.html"></include>
-      <include src="./partials/ru/home/cleaning.html"></include>
-      <include src="./partials/ru/home/before-and-after.html"></include>
-      <include src="./partials/ru/home/service.html"></include>
-      <include src="./partials/ru/home/reviews.html"></include>
-      <include src="./partials/ru/home/instruments.html"></include>
-    </main>
-    <include src="./partials/ru/home/footer.html"></include>
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <button type="button" class="call hero__button position_flex" data-modal-open>
-      <picture>
-        <source
-          media="(min-width: 1440px)"
-          srcset="images/desktop/header/icon_phone-desktop.png 1x"
-        />
-        <source media="(min-width: 768px)" srcset="images/tablet/header/icon_phone-tablet.png 1x" />
-        <source media="(max-width: 767px)" srcset="images/mobile/header/icon_phone.png 1x" />
-        <img class="phone" loading="lazy" src="#" alt="contact phone" />
-      </picture>
-    </button>
+    <div class="body-wrapper">
+      <include src="./partials/ru/home/header.html"></include>
+      <main>
+        <include src="./partials/ru/home/video-blog.html"></include>
+        <include src="./partials/ru/home/consultation-form.html"></include>
+        <!-- <include src="./partials/ru/price.html"></include> -->
+        <include src="./partials/ru/home/additional-service.html"></include>
+        <include src="./partials/ru/home/article.html"></include>
+        <include src="./partials/ru/home/products.html"></include>
+        <include src="./partials/ru/home/advantage.html"></include>
+        <include src="./partials/ru/home/problems.html"></include>
+        <include src="./partials/ru/home/cleaning.html"></include>
+        <include src="./partials/ru/home/before-and-after.html"></include>
+        <include src="./partials/ru/home/service.html"></include>
+        <include src="./partials/ru/home/reviews.html"></include>
+        <include src="./partials/ru/home/instruments.html"></include>
+      </main>
+      <include src="./partials/ru/home/footer.html"></include>
+      <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+      <button type="button" class="call hero__button position_flex" data-modal-open>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="images/desktop/header/icon_phone-desktop.png 1x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="images/tablet/header/icon_phone-tablet.png 1x"
+          />
+          <source media="(max-width: 767px)" srcset="images/mobile/header/icon_phone.png 1x" />
+          <img class="phone" loading="lazy" src="#" alt="contact phone" />
+        </picture>
+      </button>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
