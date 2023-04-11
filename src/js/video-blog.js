@@ -46,7 +46,7 @@ for (let video of videos) {
   video.setAttribute('role', 'button');
 
   // Add a thumbnail
-  video.innerHTML = `<img alt="${video.textContent}" src="https://img.youtube.com/vi_webp/${id}/maxresdefault.webp"><br>
+  video.innerHTML = `<img alt="${video.textContent}" loading="lazy" src="https://img.youtube.com/vi_webp/${id}/maxresdefault.webp"><br>
 		${video.textContent}`;
 }
 

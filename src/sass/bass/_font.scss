@@ -1,58 +1,58 @@
 @font-face {
   font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.woff) format('woff'),
+    url(../fonts/Roboto-Regular.woff2) format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Roboto-Regular.woff) format('woff'),
-    url(../fonts/Roboto-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Roboto';
+  src: url(../fonts/Roboto-Medium.woff) format('woff'),
+    url(../fonts/Roboto-Medium.woff2) format('woff2');
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(../fonts/Roboto-Medium.woff) format('woff'),
-    url(../fonts/Roboto-Medium.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
   src: url(../fonts/Roboto-Bold.woff) format('woff'),
     url(../fonts/Roboto-Bold.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../fonts/Montserrat-Bold.woff) format('woff'),
-    url(../fonts/Montserrat-Bold.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.woff) format('woff'),
+    url(../fonts/Montserrat-Bold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Light.woff) format('woff'),
+    url(../fonts/Montserrat-Light.woff2) format('woff2');
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(../fonts/Montserrat-Light.woff) format('woff'),
-    url(../fonts/Montserrat-Light.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.woff) format('woff'),
+    url(../fonts/Montserrat-Regular.woff2) format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Montserrat-Regular.woff) format('woff'),
-    url(../fonts/Montserrat-Regular.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.woff) format('woff'),
+    url(../fonts/Montserrat-Medium.woff2) format('woff2');
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(../fonts/Montserrat-Medium.woff) format('woff'),
-    url(../fonts/Montserrat-Medium.woff2) format('woff2');
 }

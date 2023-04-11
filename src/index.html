@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYXPT9DKXX"></script>
-    <script>
+    <script async>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -46,7 +46,7 @@
       href="https://www.sfera-trybochist.com/uk-version.html"
     />
     <!-- Facebook Pixel Code -->
-    <script>
+    <script async>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -69,6 +69,7 @@
 
     <!-- End Facebook Pixel Code -->
     <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+    <link rel="preload" as="image" href="images/mobile/header/chistka-dimoxoda.jpg" />
   </head>
   <body>
     <noscript
@@ -116,49 +117,6 @@
       </button>
     </div>
 
-    <script src="./index.js"></script>
-    <script>
-      (function () {
-        var supportsPassive = eventListenerOptionsSupported();
-
-        if (supportsPassive) {
-          var addEvent = EventTarget.prototype.addEventListener;
-          overwriteAddEvent(addEvent);
-        }
-
-        function overwriteAddEvent(superMethod) {
-          var defaultOptions = {
-            passive: true,
-            capture: false,
-          };
-
-          EventTarget.prototype.addEventListener = function (type, listener, options) {
-            var usesListenerOptions = typeof options === 'object';
-            var useCapture = usesListenerOptions ? options.capture : options;
-
-            options = usesListenerOptions ? options : {};
-            options.passive =
-              options.passive !== undefined ? options.passive : defaultOptions.passive;
-            options.capture = useCapture !== undefined ? useCapture : defaultOptions.capture;
-
-            superMethod.call(this, type, listener, options);
-          };
-        }
-
-        function eventListenerOptionsSupported() {
-          var supported = false;
-          try {
-            var opts = Object.defineProperty({}, 'passive', {
-              get: function () {
-                supported = true;
-              },
-            });
-            window.addEventListener('test', null, opts);
-          } catch (e) {}
-
-          return supported;
-        }
-      })();
-    </script>
+    <script src="./index.js" async></script>
   </body>
 </html>
