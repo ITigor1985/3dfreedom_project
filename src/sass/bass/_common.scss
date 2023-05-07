@@ -4,7 +4,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -19,18 +18,26 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 body {
-  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   letter-spacing: 0.03em;
+
   text-rendering: optimizeSpeed;
-  height: 100%;
-  width: 100%;
 }
-.body-wrapper {
-  min-height: 100%;
-  overflow: hidden;
-}
+
+// body {
+//   color: var(--main-text-color);
+//   letter-spacing: 0.03em;
+//   text-rendering: optimizeSpeed;
+//   height: 100%;
+//   width: 100%;
+// }
+// .body-wrapper {
+//   min-height: 100%;
+//   overflow: hidden;
+// }
 main {
   display: -webkit-flex;
   display: flex;
