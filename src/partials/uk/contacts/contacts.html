@@ -5,21 +5,6 @@
       <div class="contacts__all-contacts-wrapper">
         <div class="contacts__wrapper">
           <ul class="contacts__contact-list list">
-            <!-- <li class="contacts__contact-item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./images/desktop/footer/phone.png 1x" />
-                <source media="(min-width: 768px)" srcset="./images/tablet/footer/phone.png 1x" />
-                <source media="(max-width: 767px)" srcset="./images/mobile/footer/phone.png 1x" />
-                <img class="phone" src="#" loading="lazy" alt="дзвоніть" />
-              </picture>
-              <a
-                href="tel:0671562638"
-                rel="nofollow noopener noreferrer"
-                class="contacts__contact-link link"
-              >
-                067 156 26 38
-              </a>
-            </li> -->
             <li class="contacts__contact-item">
               <picture>
                 <source media="(min-width: 1440px)" srcset="./images/desktop/footer/phone.png 1x" />
@@ -114,10 +99,10 @@
           <div class="container">
             <h2 class="consultation__title" id="consultation__title">Зв'яжіться з нами!</h2>
             <div class="success" id="success">Заявку надіслано!</div>
-            <form class="consultation__form" id="consultation__form">
+            <form class="consultation__form" id="consultation__form" data-lang="ua">
               <div class="modal-form__input-wrapper">
                 <input
-                  class="modal-form__input"
+                  class="modal-form__input contacts"
                   minlength="2"
                   type="text"
                   name="username"
@@ -125,16 +110,18 @@
                   placeholder="Имя"
                   required
                 />
+                <p class="errorConsultationForm"></p>
               </div>
               <div class="modal-form__input-wrapper">
                 <input
-                  class="modal-form__input"
+                  class="modal-form__input contacts"
                   type="tel"
                   name="telephon"
                   id="form-telephon"
                   placeholder="Ваш телефон"
                   required
                 />
+                <p class="errorTelConsultationForm"></p>
               </div>
               <button class="consultation__form-button" type="submit">Відправити</button>
             </form>

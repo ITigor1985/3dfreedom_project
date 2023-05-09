@@ -13,6 +13,7 @@ document.getElementById('consultation__form').addEventListener('submit', functio
   } = e.currentTarget;
 
   let errorsName = nameCheck(username.value, e.target.dataset.lang);
+
   let errorsTelephone = telephoneCheck(telephon.value, e.target.dataset.lang);
 
   if (errorsName.length !== 0 || errorsTelephone.length !== 0) {
