@@ -4,6 +4,7 @@ import './sass/main.scss';
 
 import 'jquery/dist/jquery';
 import 'slick-carousel/slick/slick.min.js';
+import './js/common/google-analitics.js';
 // import './js/preloader';
 import './js/lazyimg.js';
 //import './js/binotel';
