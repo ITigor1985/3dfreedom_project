@@ -123,6 +123,14 @@
   color: #383838;
   background: radial-gradient(14.38% 469.39% at 50% 50%, #ffe791 0%, #ffaf28 100%);
   border-radius: 174px;
+  cursor: pointer;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
 }
 
 @media screen and (min-width: 768px) {
