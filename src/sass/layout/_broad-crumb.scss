@@ -27,3 +27,7 @@
   text-decoration: none;
   color: inherit;
 }
+.broad-crumb__list-item.active {
+  display: inline-block;
+  border-bottom: 2px solid darkorange;
+}
