@@ -197,6 +197,26 @@
     line-height: 45px;
   }
 }
+
+.chapter__title3 {
+  font-family: 'Montserrat';
+  max-width: 350px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ff7d28;
+  text-indent: 1em;
+  @media screen and(min-width:768px) {
+    max-width: 520px;
+    font-size: 16px;
+  }
+  @media screen and(min-width:1440px) {
+    max-width: 1030px;
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
 .chapter__description {
   max-height: 0;
   overflow: hidden;
