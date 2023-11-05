@@ -25,6 +25,7 @@
 .container-one {
   display: grid;
   grid-template-columns: 1fr;
+
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1440px) {
@@ -40,11 +41,14 @@
 
 .container-three {
   display: none;
+
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1440px) {
     & {
-      padding: 15px 0px 15px 35px;
+      border-left: 1px solid black;
+      margin-left: 20px;
+      padding: 15px 0px 15px 20px;
       display: block;
       position: relative;
     }

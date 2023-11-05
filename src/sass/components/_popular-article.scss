@@ -5,11 +5,15 @@
       top: 130px;
       min-width: 100%;
       width: 100%;
-      border: 3px solid #ff7d28;
-      border-radius: 30px;
       margin-bottom: 15px;
     }
   }
+}
+.popular-article__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .popular-article__link {
