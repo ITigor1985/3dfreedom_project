@@ -50,30 +50,3 @@
     }
   }
 }
-
-.popular-article {
-  @media screen and (min-width: 1440px) {
-    & {
-      position: sticky;
-      top: 130px;
-      min-width: 100%;
-      width: 100%;
-      border: 3px solid #ff7d28;
-      border-radius: 30px;
-      margin-bottom: 15px;
-    }
-  }
-}
-
-.our-servises {
-  @media screen and (min-width: 1440px) {
-    & {
-      position: sticky;
-      top: 275px;
-      min-width: 100%;
-      width: 100%;
-      border: 3px solid #ff7d28;
-      border-radius: 30px;
-    }
-  }
-}

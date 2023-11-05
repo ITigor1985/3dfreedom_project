@@ -1,0 +1,26 @@
+.popular-article {
+  @media screen and (min-width: 1440px) {
+    & {
+      position: sticky;
+      top: 130px;
+      min-width: 100%;
+      width: 100%;
+      border: 3px solid #ff7d28;
+      border-radius: 30px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.popular-article__link {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19.5px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
