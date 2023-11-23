@@ -149,7 +149,12 @@
         <div class="container">
           <div class="success">Заявка отправлена!</div>
 
-          <form class="consultation__form pay" id="consultation__form-pay" data-lang="ru">
+          <form
+            class="consultation__form pay"
+            id="consultation__form-pay"
+            autocomplete="off"
+            data-lang="ru"
+          >
             <div class="modal-form__input-wrapper quantity">
               <p class="text-quantity">Количество</p>
               <button class="minus" disabled type="button"><span>-</span></button>
@@ -161,12 +166,14 @@
                 name="value"
                 id="form-value"
                 value="1"
+                autocomplete="off"
                 required
               />
               <button class="plus" type="button"><span>+</span></button>
             </div>
             <div class="modal-form__input-wrapper pay">
               <input
+                autocomplete="off"
                 class="modal-form__input pay"
                 minlength="2"
                 type="text"
@@ -184,6 +191,7 @@
                 name="telephon"
                 id="form-telep"
                 placeholder="Ваш телефон"
+                autocomplete="off"
                 required
               />
               <p class="errorTel"></p>

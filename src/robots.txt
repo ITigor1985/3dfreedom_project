@@ -1,0 +1,4 @@
+Host: www.sfera-trybochist.com
+User-agent: Googlebot
+Disallow: 
+Sitemap: http://sfera-trybochist.com/sitemap.xml
